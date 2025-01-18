@@ -32,6 +32,7 @@ import EPage1 from './Components/ExtendedPages/Epage1'
 import EPage2 from './Components/ExtendedPages/Epage2'
 import EPage3 from './Components/ExtendedPages/Epage3'
 import ScrollToTopLayout from './Components/ScrollTo/ScrollToTopLayout';
+import FacilityUpdated from './Components/Facility/FacilityUpated'
 
 
 const App = () => {
@@ -59,7 +60,7 @@ const App = () => {
            <Route path="/page5" element={<ScrollToTopLayout><Page5/></ScrollToTopLayout>} />
           
            <Route path="/faculty" element={<ScrollToTopLayout><Faculty/></ScrollToTopLayout>} />
-           <Route path="/facility" element={<ScrollToTopLayout><Facility/></ScrollToTopLayout>} />
+           <Route path="/facility" element={<ScrollToTopLayout><FacilityUpdated/></ScrollToTopLayout>} />
            <Route path="/facility1" element={<ScrollToTopLayout><Facility1/></ScrollToTopLayout>} />
            <Route path="/facility2" element={<ScrollToTopLayout><Facility2/></ScrollToTopLayout>} />
            <Route path="/facility3" element={<ScrollToTopLayout><Facility3/></ScrollToTopLayout>} />
