@@ -103,15 +103,17 @@ const FacilityUpdated = () => {
       
      
       <div className="slider-controler">
-  <div className="slider-arrow prev">  {/* Updated to use 'prev' class */}
-    <ion-icon name="arrow-back-circle-outline" className="prev"></ion-icon>
-  </div>
+      
+          <div className="slider-arrow prev">  {/* Updated to use 'prev' class */}
+            <ion-icon name="arrow-back-circle-outline" className="prev"></ion-icon>
+          </div>
 
-  <div className="slider-arrow next">  {/* Updated to use 'next' class */}
-    <ion-icon name="arrow-forward-circle-outline" className="next"></ion-icon>
-  </div>
-  <div className="swiper-pagination "></div>
-</div>
+          <div className="slider-arrow next">  {/* Updated to use 'next' class */}
+            <ion-icon name="arrow-forward-circle-outline" className="next"></ion-icon>
+          </div>
+          <div className="swiper-pagination "></div>
+  
+      </div>
         
       
      

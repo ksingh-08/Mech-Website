@@ -115,19 +115,12 @@ ion-icon {
     border-radius: 50%; /* Optional: makes the background circular */
     padding: 10px; /* Optional: adds space around the icon */
   }
-.swiper-pagination{
-    position: absolute;
-    transform: translate(0%,-460%);
-    z-index: 1;
-}
+
 .slider-controler{
-    display: flex;
-    justify-content:space-evenly;
-    padding-left: 350px;
-    padding-right: 350px;
-    padding-top: 20px;
+    
     
 }
+
 
 .swiper-slide-active .title1{
     bottom : -4px;
@@ -140,6 +133,9 @@ ion-icon {
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
 }
+.arr-pagination{
+    display: flex;
+}
 .swiper-pagination-bullet-active{
   width:22px;
   background-color: red;
@@ -147,3 +143,37 @@ ion-icon {
 
 }
 
+.slider-controler {
+    display: flex;
+    position: relative; /* For absolute positioning of arrows */
+    width: 100%; /* Ensure the container has full width */
+    justify-content:space-evenly;
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-top: 50px;
+  }
+  
+  .slider-arrow {
+    top: 50%; /* Vertically center the arrows */
+    z-index: 10; /* Ensure arrows are above other elements */
+    cursor: pointer; /* Change cursor on hover */
+  }
+  
+  
+  .prev {
+    left: 10px; /* Position the left arrow */
+  }
+  
+  .next {
+    right: 10px; /* Position the right arrow */
+  }
+  
+  .swiper-pagination {
+    margin-top: 10px; /* Adjust the pagination if needed */
+  }
+  .slider-arrow:active {
+    background-color: lightcoral; /* Change the background color on click */
+    border-radius: 100%; /* Optional: make the arrow a circle when clicked */
+    
+  }
+  
