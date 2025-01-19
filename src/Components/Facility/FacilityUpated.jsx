@@ -22,24 +22,26 @@ const FacilityUpdated = () => {
   
   return (
     <div className="facility-container">
-       <Title title='LAB FACILITIES'/>
+       <Title title='LAB FACILITIES' className='title2'/>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
         slidesPerView={'auto'}
+        initialSlide={2}
         coverflowEffect={{
           rotate: 0,
           stretch: 50,
           depth: 200,
           modifier: 1,
           slideShadows:true,
+          
         }}
         pagination={{ el: '.swiper-pagination', clickable: true }}
         navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.next',
+          prevEl: '.prev',
           clickable: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
@@ -96,17 +98,23 @@ const FacilityUpdated = () => {
           <div className='title1'><span>Consumable Development</span></div>
           </Link>
         </SwiperSlide>
-        <div className="slider-controler">
-        <div className="swiper-button-prev slider-arrow">
-          <ion-icon name="arrow-back-outline"></ion-icon>
-        </div>
-        <div className="swiper-button-next slider-arrow">
-          <ion-icon name="arrow-forward-outline"></ion-icon>
-        </div>
         
-      </div>
       </Swiper>
-      <div className="swiper-pagination "></div>
+      
+     
+      <div className="slider-controler">
+  <div className="slider-arrow prev">  {/* Updated to use 'prev' class */}
+    <ion-icon name="arrow-back-circle-outline" className="prev"></ion-icon>
+  </div>
+
+  <div className="slider-arrow next">  {/* Updated to use 'next' class */}
+    <ion-icon name="arrow-forward-circle-outline" className="next"></ion-icon>
+  </div>
+  <div className="swiper-pagination "></div>
+</div>
+        
+      
+     
       
     </div>
   );
