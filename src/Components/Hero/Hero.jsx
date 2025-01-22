@@ -5,6 +5,7 @@ import Extended from '../Extended/Extended'
 import Title from '../Title/Title'
 import Photos from '../Photos/Photos'
 import Testimonials from '../Testimonials/Testimonials'
+import ExtendedUpdated from '../Extended/ExtendedUpdated'
  
  
  
@@ -46,7 +47,7 @@ const Hero = () => {
        
      <div className="container">
       <Title     title='What We Provide'/>
-     <Extended/>
+     <ExtendedUpdated/>
 
      <Title subTitle='Gallery' title='Lab Photos'/>
      <Photos/>
