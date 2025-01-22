@@ -27,12 +27,15 @@ import Facility7 from './Components/FacilityPages/Facility7'
 import Facility8 from './Components/FacilityPages/Facility8'
 import Admission from './Components/Admission/Admission'
 import Career from './Components/Career/Career'
+import './index.css'; // or the correct path to your CSS file
 
 import EPage1 from './Components/ExtendedPages/Epage1'
 import EPage2 from './Components/ExtendedPages/Epage2'
 import EPage3 from './Components/ExtendedPages/Epage3'
 import ScrollToTopLayout from './Components/ScrollTo/ScrollToTopLayout';
 import FacilityUpdated from './Components/Facility/FacilityUpated'
+import NavbarUpdated from './Components/Navbar/NavbarUpdated'
+
 
 
 const App = () => {
@@ -42,10 +45,11 @@ const App = () => {
          
    
          
-    <Navbar/>
+    <NavbarUpdated/>
        
        <Routes>
       
+
 
         <Route path="/" element={ <ScrollToTopLayout><Hero/></ScrollToTopLayout>}/>
            <Route path="/about" element={ <ScrollToTopLayout><About/></ScrollToTopLayout>} />

@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 *{
@@ -8,7 +10,9 @@
 }
 
 body{
+    
     background: #F5F5F5;
+    
 }
 
 a{
@@ -29,7 +33,7 @@ a{
 {
     background: #FFF;
     color: #212121;
-    padding: 17px 11px;
+    padding: 17px 15px;
     font-size: 16px;
     font-weight: 700;
     border-radius: 114px;

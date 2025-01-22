@@ -1,7 +1,9 @@
+/*
+
 nav{
 
-/* background: #22019ceb;  */
- width:100%;
+
+width:100%;
 color:white;
 padding: 4px 0;
 position: fixed;
@@ -18,8 +20,8 @@ font-weight:bold;
 
 .logo{
 
-    height: 45px;
-    width: 80px;
+    height: 38px;
+    width: 120px;
     filter: brightness(150%);
     
 }
@@ -42,30 +44,24 @@ nav ul li:hover
 
 
 .dark-nav{
-    /* background: #212EA0; */
+   
     background: #9c111a;
     transition: 0.5s;
 }
 
 #menuIcon{
-    /* display: block; */
+   
     width: 30px;
     cursor: pointer;
-    /* position: fixed; */
+    
     top:22px;
     right: 90px;
-    /* order: 1; */
-    /* flex: 1; */
+   
     
 }
 
 
-/* Basic CSS for styling */
 
-/* .dropdown {
-    position: relative;
-    display: inline-block;
-} */
 
 .dropdown-content {
     display: none;
@@ -118,7 +114,7 @@ nav ul li:hover
 
 
 
-/* media query */
+
 @media (max-width:1000px)
 {
     .logo{
@@ -162,3 +158,4 @@ nav ul li:hover
 
 }
 
+*/
