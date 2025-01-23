@@ -1,6 +1,6 @@
 import React from 'react'
 import './Facility1.css'
-import fl1 from '../../assets/fl1.jpg'
+import fl1 from '../../assets/fl1.png'
 
 const Facility1 = () => {
   return (

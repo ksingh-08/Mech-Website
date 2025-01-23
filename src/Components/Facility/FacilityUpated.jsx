@@ -8,7 +8,7 @@ import './fac.css'
 import Title from '../Title/Title'
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import { Link } from 'react-router-dom'
-import slide_image1 from '../../assets/fl1.jpg';
+import slide_image1 from '../../assets/fl1.png';
 import slide_image2 from '../../assets/fl2.jpg';
 import slide_image3 from '../../assets/fl3.jpg';
 import slide_image4 from '../../assets/fl4.png';
@@ -49,7 +49,7 @@ const FacilityUpdated = () => {
       >
         
         <SwiperSlide className='swiper-slide'>
-        <Link to="/facility1">  <a href="/facility1"/>
+        <Link to="/facility1"> 
           <img src={slide_image1} alt="slide_image" />
           <div className='title1'>
             <span>SMAW</span></div>

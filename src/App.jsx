@@ -35,6 +35,7 @@ import EPage3 from './Components/ExtendedPages/Epage3'
 import ScrollToTopLayout from './Components/ScrollTo/ScrollToTopLayout';
 import FacilityUpdated from './Components/Facility/FacilityUpated'
 import NavbarUpdated from './Components/Navbar/NavbarUpdated'
+import Fac1Updated from './Components/FacilityPages/Fac1Updated'
 
 
 
@@ -65,7 +66,7 @@ const App = () => {
           
            <Route path="/faculty" element={<ScrollToTopLayout><Faculty/></ScrollToTopLayout>} />
            <Route path="/facility" element={<ScrollToTopLayout><FacilityUpdated/></ScrollToTopLayout>} />
-           <Route path="/facility1" element={<ScrollToTopLayout><Facility1/></ScrollToTopLayout>} />
+           <Route path="/facility1" element={<ScrollToTopLayout><Fac1Updated/></ScrollToTopLayout>} />
            <Route path="/facility2" element={<ScrollToTopLayout><Facility2/></ScrollToTopLayout>} />
            <Route path="/facility3" element={<ScrollToTopLayout><Facility3/></ScrollToTopLayout>} />
            <Route path="/facility4" element={<ScrollToTopLayout><Facility4/></ScrollToTopLayout>} />

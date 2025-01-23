@@ -1,6 +1,6 @@
 import React from 'react'
 import './Facility.css'
-import fl1 from '../../assets/fl1.jpg'
+import fl1 from '../../assets/fl1.png'
 import fl2 from '../../assets/fl2.jpg'
 import fl3 from '../../assets/fl3.jpg'
 import fl4 from '../../assets/fl4.png'
