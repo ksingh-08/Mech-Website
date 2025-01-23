@@ -1,6 +1,6 @@
 .outerFacility
 {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 50px;
 
 }
@@ -116,15 +116,12 @@ ion-icon {
     padding: 10px; /* Optional: adds space around the icon */
   }
 
-.slider-controler{
-    
-    
-}
+
 
 
 .swiper-slide-active .title1{
     bottom : -4px;
-    box-shadow: 0 20px 30px 2px red;
+    
 }
 .swiper-pagination-bullet{
     width: 14px;

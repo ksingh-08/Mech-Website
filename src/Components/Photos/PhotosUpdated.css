@@ -1,6 +1,6 @@
 :root {
     --width: 200px; /* Width of each photo */
-    --height: 300px; /* Height of each photo */
+    --height: 250px; /* Height of each photo */
     --quantity: 6; /* Total number of photos */
     --animation-duration: 15s; /* Total duration for all items to cycle */
     --gap: 20px; /* Gap between images */
@@ -16,6 +16,7 @@
         #000 5% 95%,
         transparent
     );
+    
 }
 
 .slider .list-wrapper {

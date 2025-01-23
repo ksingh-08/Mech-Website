@@ -18,7 +18,7 @@ const PhotosUpdated = () => {
   className="slider"
   style={{
     '--width': '400px',
-    '--height': '700px',
+    '--height': '535px',
     '--quantity': '6',
   }}
 >

@@ -50,7 +50,7 @@ const Hero = () => {
     </div>
        
      <div className="container">
-      <Title     title='What We Provide'/>
+      <Title subTitle='Our Expertise'  title='What We Provide'/>
      <ExtendedUpdated/>
 
      <Title subTitle='Gallery' title='Lab Photos'/>

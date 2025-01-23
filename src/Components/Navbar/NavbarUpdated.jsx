@@ -8,6 +8,9 @@ import { useState , useEffect } from 'react';
 const NavbarUpdated = () => {
 
   const [openMenu, setOpenMenu] = useState(false);
+  const menuHandler = ()=>{
+      setOpenMenu(!openMenu);
+  }
 
   useEffect(() => {
     const handleScroll = () =>{
@@ -29,7 +32,7 @@ const NavbarUpdated = () => {
   const [scrolling, setScrolling] = useState(false);
   return (
     <nav  className={`z-10 flex justify-between items-center w-[89%] bg-red-900 fixed left-1/2 transform -translate-x-1/2  p-6  h-20 shadow-xl
-    ${scrolling ? " top-0 w-full rounded-none transition-all" : ' top-5 rounded-xl'}`}>
+    ${scrolling ? " top-0 w-full rounded-none transition-all" : ' top-5 rounded-xl transition-all'}`}>
       <img src={logo} alt="" className='w-40 ' />
 
       <ul className={`flex gap-12 [&>li>a]:cursor-pointer [&>li>a]:text-white justify-center `}>
