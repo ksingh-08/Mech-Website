@@ -6,11 +6,15 @@ import Title from '../Title/Title'
 import Photos from '../Photos/Photos'
 import Testimonials from '../Testimonials/Testimonials'
 import ExtendedUpdated from '../Extended/ExtendedUpdated'
+import { Slider } from '@mui/material'
+import PhotosUpdated from '../Photos/PhotosUpdated'
+
  
  
  
 
 const Hero = () => { 
+  
 
 
   useEffect(() => {
@@ -50,7 +54,8 @@ const Hero = () => {
      <ExtendedUpdated/>
 
      <Title subTitle='Gallery' title='Lab Photos'/>
-     <Photos/>
+     <PhotosUpdated/>
+     
      <Title subTitle='TESTIMONIALS' title='What Students Say'/>
      <Testimonials/>
 

@@ -29,13 +29,13 @@ export default function MultiActionAreaCard2() {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-      {/* <Link to="training">
+     {/* <CardActions>
+       <Link to="training">
         <Button size="small" color="primary">
           Read More
         </Button>
-        </Link> */}
-      </CardActions>
+        </Link> 
+      </CardActions>*/}
     </Card>
     </Link>
   );

@@ -1,0 +1,56 @@
+:root {
+    --width: 200px; /* Width of each photo */
+    --height: 300px; /* Height of each photo */
+    --quantity: 6; /* Total number of photos */
+    --animation-duration: 15s; /* Total duration for all items to cycle */
+    --gap: 20px; /* Gap between images */
+}
+
+.slider {
+    width: 100%;
+    height: var(--height);
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 5% 95%,
+        transparent
+    );
+}
+
+.slider .list-wrapper {
+    display: flex;
+    width: 100%;
+    overflow: hidden; /* Hide any overflow */
+}
+
+.slider .list {
+    display: flex;
+    position: relative;
+    width: calc((var(--width) + var(--gap)) * var(--quantity)); /* Adjust width for items and gap */
+    animation: autoRun var(--animation-duration) linear infinite;
+}
+
+.slider .list .item {
+    flex: 0 0 var(--width); /* Maintain fixed width for items */
+    height: var(--height);
+    margin-right: var(--gap); /* Add spacing between items */
+}
+
+.slider .list .item img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+@keyframes autoRun {
+    from {
+        transform: translateX(0); /* Start at the left edge */
+    }
+    to {
+        transform: translateX(calc(-1 * (var(--width) + var(--gap)) * var(--quantity))); /* Move all items left */
+    }
+}
+
+.slider:hover .list {
+    animation-play-state: paused !important; /* Pause animation on hover */
+}
