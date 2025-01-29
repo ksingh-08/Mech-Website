@@ -30,7 +30,7 @@ const Fac1Updated = () => {
         <p className='my-3'>SMAW is a versatile and reliable welding process suitable for a wide range of applications. Its simplicity, adaptability, and cost-effectiveness make it an essential technique in the mechanical and construction industries. Whether for structural fabrication or repair work, SMAW continues to play a vital role in welding technology.</p>
         
         <div className='my-24'>
-            <a href="https://en.wikipedia.org/wiki/Shielded_metal_arc_welding" className='text-black font-semibold my-4' target='_blank'>Link for whole article </a>
+            <a href="https://en.wikipedia.org/wiki/Shielded_metal_arc_welding" className='text-black font-semibold my-4 underline' target='_blank'>Link for the whole article </a>
         </div>
       </div>
 

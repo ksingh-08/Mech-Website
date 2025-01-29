@@ -32,8 +32,8 @@ const FacilityUpdated = () => {
         initialSlide={2}
         coverflowEffect={{
           rotate: 0,
-          stretch: 50,
-          depth: 200,
+          stretch: 100,
+          depth: 100,
           modifier: 1,
           slideShadows:true,
           
