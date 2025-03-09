@@ -7,7 +7,7 @@ const Fac1Updated = () => {
       <div className='bg-gray-200 py-5 px-5 md:px-12 lg:px-28'>
         <div className='text-center my-24'>
           <h1 className='text-2xl sm:text-5xl font-semibold max-w-[700px] mx-auto mt-36 pb-2'>
-            SMAW: Shielded Metal Arc Welding
+             Shielded Metal Arc Welding
           </h1>
         </div>
       </div>
