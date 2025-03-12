@@ -43,11 +43,7 @@ const NavbarUpdated = () => {
       <li className='hover:scale-105'><NavLink className='hover:text-orange-100' to="/career">Careers</NavLink></li>
       <li className='hover:scale-105'><NavLink className='hover:text-orange-100' to="/facility">Facility</NavLink></li>
       <li className='hover:scale-105'><NavLink className='hover:text-orange-100' to="/research">Research</NavLink></li> 
-
-
-      <li>
-        
-        </li>
+      <li className="hover:scale-105"><NavLink className="hover:text-orange-100" to="/scope">Why LNMIIT?</NavLink></li>
       </ul>
 
       <div>
