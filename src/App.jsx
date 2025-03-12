@@ -36,6 +36,13 @@ import ScrollToTopLayout from './Components/ScrollTo/ScrollToTopLayout';
 import FacilityUpdated from './Components/Facility/FacilityUpated'
 import NavbarUpdated from './Components/Navbar/NavbarUpdated'
 import Fac1Updated from './Components/FacilityPages/Fac1Updated'
+import Fac2Updated from './Components/FacilityPages/Fac2Updated'
+import Fac3Updated from './Components/FacilityPages/Fac3Updated'
+import Fac4Updated from './Components/FacilityPages/Fac4Updated'
+import Fac5Updated from './Components/FacilityPages/Fac5Updated'
+import Fac6Updated from './Components/FacilityPages/Fac6Updated'
+import Fac7Updated from './Components/FacilityPages/Fac7Updated'
+import Fac8Updated from './Components/FacilityPages/Fac8Updated'
 
 
 
@@ -67,13 +74,13 @@ const App = () => {
            <Route path="/faculty" element={<ScrollToTopLayout><Faculty/></ScrollToTopLayout>} />
            <Route path="/facility" element={<ScrollToTopLayout><FacilityUpdated/></ScrollToTopLayout>} />
            <Route path="/facility1" element={<ScrollToTopLayout><Fac1Updated/></ScrollToTopLayout>} />
-           <Route path="/facility2" element={<ScrollToTopLayout><Facility2/></ScrollToTopLayout>} />
-           <Route path="/facility3" element={<ScrollToTopLayout><Facility3/></ScrollToTopLayout>} />
-           <Route path="/facility4" element={<ScrollToTopLayout><Facility4/></ScrollToTopLayout>} />
-           <Route path="/facility5" element={<ScrollToTopLayout><Facility5/></ScrollToTopLayout>} />
-           <Route path="/facility6" element={<ScrollToTopLayout><Facility6/></ScrollToTopLayout>} />
-           <Route path="/facility7" element={<ScrollToTopLayout><Facility7/></ScrollToTopLayout>} />
-           <Route path="/facility8" element={<ScrollToTopLayout><Facility8/></ScrollToTopLayout>} />
+           <Route path="/facility2" element={<ScrollToTopLayout><Fac2Updated/></ScrollToTopLayout>} />
+           <Route path="/facility3" element={<ScrollToTopLayout><Fac3Updated/></ScrollToTopLayout>} />
+           <Route path="/facility4" element={<ScrollToTopLayout><Fac4Updated/></ScrollToTopLayout>} />
+           <Route path="/facility5" element={<ScrollToTopLayout><Fac5Updated/></ScrollToTopLayout>} />
+           <Route path="/facility6" element={<ScrollToTopLayout><Fac6Updated/></ScrollToTopLayout>} />
+           <Route path="/facility7" element={<ScrollToTopLayout><Fac7Updated/></ScrollToTopLayout>} />
+           <Route path="/facility8" element={<ScrollToTopLayout><Fac8Updated/></ScrollToTopLayout>} />
            <Route path="/admission" element={<ScrollToTopLayout><Admission/></ScrollToTopLayout>} />
            <Route path="/career" element={<ScrollToTopLayout><Career/></ScrollToTopLayout>} />
 
