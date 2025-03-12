@@ -43,7 +43,7 @@ import Fac5Updated from './Components/FacilityPages/Fac5Updated'
 import Fac6Updated from './Components/FacilityPages/Fac6Updated'
 import Fac7Updated from './Components/FacilityPages/Fac7Updated'
 import Fac8Updated from './Components/FacilityPages/Fac8Updated'
-
+import Scope from './Components/Scope/Scope'
 
 
 const App = () => {
@@ -83,21 +83,11 @@ const App = () => {
            <Route path="/facility8" element={<ScrollToTopLayout><Fac8Updated/></ScrollToTopLayout>} />
            <Route path="/admission" element={<ScrollToTopLayout><Admission/></ScrollToTopLayout>} />
            <Route path="/career" element={<ScrollToTopLayout><Career/></ScrollToTopLayout>} />
-
            <Route path="/industry-consultancy" element={<ScrollToTopLayout><EPage1/></ScrollToTopLayout>} />
            <Route path="/training" element={<ScrollToTopLayout><EPage2/></ScrollToTopLayout>} />
            <Route path="/workshop" element={<ScrollToTopLayout><EPage3/></ScrollToTopLayout>} />
-           
-           
-      
-
-
-
-     
-
-      </Routes>
-
-      
+           <Route path="/Scope" element={<ScrollToTopLayout><Scope /></ScrollToTopLayout>} />
+           </Routes>
       <Footer/>
       
     </div>
