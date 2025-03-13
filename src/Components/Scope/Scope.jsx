@@ -1,6 +1,7 @@
 import React from 'react';
 import WhyLNMIITsection from '../WhySection/WhyLNMIITsection';
 import ExperienceCard from '../Path/ExperienceCard';
+import Achievements from '../AchievementCard/AchievementCard';
 
 
 function Scope() {
@@ -12,6 +13,7 @@ function Scope() {
       </div>
       <div>
         {/* Ankur */}
+        <Achievements/>
       </div>
       <div>
         {/* Karan */}
