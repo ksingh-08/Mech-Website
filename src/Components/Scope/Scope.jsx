@@ -1,5 +1,6 @@
 import React from 'react';
 import WhyLNMIITsection from '../WhySection/WhyLNMIITsection';
+import ExperienceCard from '../Path/ExperienceCard';
 
 
 function Scope() {
@@ -14,6 +15,8 @@ function Scope() {
       </div>
       <div>
         {/* Karan */}
+        <ExperienceCard/>
+        
       </div>
       
     </>
