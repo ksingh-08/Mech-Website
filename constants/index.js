@@ -23,6 +23,11 @@ import {
   jobit,
   tripguide,
   threejs,
+  research,
+  industry,
+  facilities,
+  welding,
+  future,
 } from "../assets";
 
 export const navLinks = [
@@ -118,7 +123,7 @@ const experiences = [
   {
     title: "Importance of Welding Research",
     // company_name: "Starbucks",
-    icon: "../assets/welding.png",
+    icon: welding,
     iconBg: "white",
     //date: "March 2020 - April 2021",
     points: [
@@ -128,7 +133,7 @@ const experiences = [
   {
     title: "Cutting-Edge Research Areas",
     //company_name: "Tesla",
-    icon: "../assets/research.png",
+    icon: research,
     iconBg: "white",
     //date: "Jan 2021 - Feb 2022",
     points: [
@@ -141,7 +146,7 @@ const experiences = [
   {
     title: "Industry Collaboration & Impact",
     //company_name: "Shopify",
-    icon: "../assets/industry.png",
+    icon: industry,
     iconBg: "white",
     //date: "Jan 2022 - Jan 2023",
     points: [
@@ -151,7 +156,7 @@ const experiences = [
   {
     title: "State-of-the-Art Facilities",
     //company_name: "Meta",
-    icon: "../assets/facilities.png",
+    icon: facilities,
     iconBg:"white",
     //date: "Jan 2023 - Present",
     points: [
@@ -161,7 +166,7 @@ const experiences = [
   {
     title: "Future Innovations & Opportunities",
     //company_name: "Meta",
-    icon: "../assets/future.png",
+    icon: future,
     iconBg: "white",
     //date: "Jan 2023 - Present",
     points: [

@@ -29,8 +29,18 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import research from "./research.png";
+import industry from "./industry.png";
+import facilities from "./facilities.png";
+import welding from "./welding.png";
+import future from "./future.png";
 
 export {
+  research,
+  industry,
+  facilities,
+  welding,
+  future,
   logo,
   backend,
   creator,
