@@ -42,7 +42,7 @@ const NavbarUpdated = () => {
       {/* <li><NavLink to="/programs">Projects</NavLink></li> */}
       <li className='hover:scale-105'><NavLink className=" text-xl font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/about">About</NavLink></li>
       
-      <li className='hover:scale-105'><NavLink className=" text-xl font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/career">Careers</NavLink></li>
+      {/* <li className='hover:scale-105'><NavLink className=" text-xl font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/career">Careers</NavLink></li> */}
       <li className='hover:scale-105'><NavLink className=" text-xl font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/facility">Facility</NavLink></li>
       <li className='hover:scale-105'><NavLink className=" text-xl font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/research">Research</NavLink></li> 
       
@@ -76,9 +76,9 @@ const NavbarUpdated = () => {
   <li className='hover:scale-105'>
     <NavLink href="/about" className="text-xl font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/about">About</NavLink>
   </li>
-  <li className='hover:scale-105'>
+  {/* <li className='hover:scale-105'>
     <NavLink href="/career" className="text-xl font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/career">Careers</NavLink>
-  </li>
+  </li> */}
   <li className='hover:scale-105'>
     <NavLink href="/facility" className="text-xl font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/facility">Facility</NavLink>
   </li>
