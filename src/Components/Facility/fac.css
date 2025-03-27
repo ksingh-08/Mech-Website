@@ -1,17 +1,23 @@
+
 .outerFacility
 {
+  
     margin-top: 15px;
     margin-bottom: 50px;
+    
 
 }
 
 .Facilitycontainer {
+  
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
   }
   
   .cardFacility {
+    
     width: 200px;
   height: 250px; /* Adjust height to accommodate the image */
   background-color: #f0f0f0;
@@ -29,6 +35,7 @@
 
   .cardFacility img
   {
+    
     width: 100%; /* Ensure the image fills the card */
     height: 150px; /* Maintain aspect ratio */
     border-radius: 5px; /* Add border-radius if needed */
@@ -52,6 +59,7 @@
   
 
 .facility-container{
+  
    margin-bottom: 50px; 
 }
 .swiper-slide{
@@ -84,7 +92,7 @@
     bottom:5px;
     left: 50%;
     font-weight: bold;
-    transform: translate(-50%,-10%);
+    transform: translate(-50%,-30%);
     -ms-transform: translate(-50%,-10%);
     width:max-content;
     text-align:center;
@@ -166,7 +174,9 @@ ion-icon {
   }
   
   .swiper-pagination {
-    margin-top: 10px; /* Adjust the pagination if needed */
+    position: absolute;
+    top:50%;
+    margin-top: 350px; /* Adjust the pagination if needed */
   }
   .slider-arrow:active {
     background-color: lightcoral; /* Change the background color on click */
@@ -174,3 +184,34 @@ ion-icon {
     
   }
   
+  @media (max-width: 768px) {
+    .slider-controler {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 768px) {
+  .slider-controler {
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+      width: 90%; /* Relative width instead of fixed */
+      max-width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .Facilitycontainer {
+      justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .slider-controler {
+      justify-content: space-between;  /* Spread arrows evenly */
+      padding-left: 30px;
+      padding-right: 30px;
+  }
+}

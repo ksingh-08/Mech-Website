@@ -9,8 +9,10 @@ import ExtendedUpdated from '../Extended/ExtendedUpdated'
 import { Slider } from '@mui/material'
 import PhotosUpdated from '../Photos/PhotosUpdated'
 
- 
- 
+
+
+  
+
  
 
 const Hero = () => { 
@@ -42,13 +44,13 @@ const Hero = () => {
         
          <a href="#move" className='btn'>Explore more <img src={dark_arrow} alt="" /></a> 
         
-          
+         
          
         </div>
-
-         
+        
+     
     </div>
-       
+    
      <div className="container">
       <Title subTitle='Our Expertise'  title='What We Provide'/>
      <ExtendedUpdated/>
@@ -61,6 +63,7 @@ const Hero = () => {
 
 
      </div>
+     
   
     </>
    

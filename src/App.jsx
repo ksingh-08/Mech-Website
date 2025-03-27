@@ -57,7 +57,7 @@ const App = () => {
        
        <Routes>
       
-
+       
 
         <Route path="/" element={ <ScrollToTopLayout><Hero/></ScrollToTopLayout>}/>
            <Route path="/about" element={ <ScrollToTopLayout><About/></ScrollToTopLayout>} />
