@@ -1,5 +1,5 @@
 import React from 'react';
-import fl2 from '../../assets/fl2.jpg';
+import fl2 from '../../newpics/SAW.jpeg';
 
 const Fac2Updated = () => {
   return (

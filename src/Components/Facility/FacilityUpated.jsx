@@ -8,14 +8,15 @@ import './fac.css'
 import Title from '../Title/Title'
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import { Link } from 'react-router-dom'
-import slide_image1 from '../../assets/fl1.png';
-import slide_image2 from '../../assets/fl2.jpg';
-import slide_image3 from '../../assets/fl3.jpg';
+import slide_image1 from '../../newpics/SMAW.jpeg';
+import slide_image2 from '../../newpics/SAW.jpeg';
+import slide_image3 from '../../newpics/GMAW.jpeg';
 import slide_image4 from '../../assets/fl4.png';
 import slide_image5 from '../../assets/fl5.jpg';
-import slide_image6 from '../../assets/fl6.png';
-import slide_image7 from '../../assets/fl7.png';
+import slide_image6 from '../../newpics/Robotic.jpeg';
+import slide_image7 from '../../newpics/Plasma.jpeg';
 import slide_image8 from '../../assets/fl8.jpg';
+import smaw from '../../newpics/SMAW.jpeg'
 
 const FacilityUpdated = () => {
   const [count, setCount] = useState(0);

@@ -1,5 +1,5 @@
 import React from 'react';
-import fl7 from '../../assets/fl7.png';
+import fl7 from '../../newpics/Plasma.jpeg';
 
 const Fac7Updated = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import fl6 from '../../assets/fl6.png';
+import fl6 from '../../newpics/Robotic.jpeg';
 
 const Fac6Updated = () => {
   return (

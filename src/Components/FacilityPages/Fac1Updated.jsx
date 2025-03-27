@@ -1,5 +1,6 @@
 import React from 'react';
 import fl1 from '../../assets/fl1.png';
+import smaw from '../../newpics/SMAW.jpeg'
 
 const Fac1Updated = () => {
   return (
@@ -9,7 +10,7 @@ const Fac1Updated = () => {
         {/* Background Image with Red Tint */}
         <div className='absolute inset-0 w-full h-full overflow-hidden'>
           <img 
-            src={fl1} 
+            src={smaw} 
             className='w-full h-full object-cover opacity-20 filter grayscale' 
             alt="Background" 
           />
@@ -27,7 +28,7 @@ const Fac1Updated = () => {
       {/* Main Image in Foreground */}
       <div className='relative flex justify-center -mt-20 z-0'>
         <img 
-          src={fl1} 
+          src={smaw} 
           className='h-80 border-4 border-gray-700 shadow-xl rounded-lg' 
           alt="SMAW Machine" 
         />
