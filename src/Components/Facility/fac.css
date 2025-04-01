@@ -1,24 +1,24 @@
+.facility-preface {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+  font-size: 1.2rem;
+  color: #333;
+}
 
-.outerFacility
-{
-  
-    margin-top: 15px;
-    margin-bottom: 50px;
-    
-
+.outerFacility {
+  margin-top: 15px;
+  margin-bottom: 50px;
 }
 
 .Facilitycontainer {
-  
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-  }
-  
-  .cardFacility {
-    
-    width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cardFacility {
+  width: 200px;
   height: 250px; /* Adjust height to accommodate the image */
   background-color: #f0f0f0;
   border-radius: 10px;
@@ -26,192 +26,177 @@
   padding: 20px;
   text-align: center;
   text-decoration: none; /* Removes default link underline */
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border: 1px solid black;
-  }
-
-  .cardFacility img
-  {
-    
-    width: 100%; /* Ensure the image fills the card */
-    height: 150px; /* Maintain aspect ratio */
-    border-radius: 5px; /* Add border-radius if needed */
-  }
-  
-  .cardFacility:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    background-color: #d1d9e1;
-  }
-  
-  .cardFacility h2 {
-    margin-top: 0;
-  }
-  
-  .cardFacility p {
-    margin-bottom: 0;
-    color: rgb(0, 195, 255);
-
-  }
-  
-
-.facility-container{
-  
-   margin-bottom: 50px; 
-}
-.swiper-slide{
-    position: relative;
-    width:320px;
-    aspect-ratio: 3/4;
-    /* border-radius: 6px; */
-    /* border:1px solid black; */
-    
-    
 }
 
-.swiper-slide img{
-    display:block;
-    width: 100%;
-    height:100%;
-    object-fit:cover;
-    border-radius: 0px;
-    border: inherit;
-    user-select: none;
-    
+.cardFacility img {
+  width: 100%; /* Ensure the image fills the card */
+  height: 150px; /* Maintain aspect ratio */
+  border-radius: 5px; /* Add border-radius if needed */
 }
-.title{
-    justify-content: center;
-    text-align: center;
-    margin-top: 110px;
-}
-.title1{
-    position: absolute;
-    bottom:5px;
-    left: 50%;
-    font-weight: bold;
-    transform: translate(-50%,-30%);
-    -ms-transform: translate(-50%,-10%);
-    width:max-content;
-    text-align:center;
-    padding : 10px 18px;
-    border-radius: 8px;
-    border:2px solid black;
-    box-shadow: 0 4px 30px black;
-    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
-    -webkit-backdrop-filter: blur(30px); /* Apply blur effect */
-    backdrop-filter: blur(100px); /* Standard syntax */
-    transition: all 0.5s linear;
 
+.cardFacility:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: #d1d9e1;
 }
-.title span{
-    font-size:1.2rem;
-    font-weight: 600;
 
+.cardFacility h2 {
+  margin-top: 0;
+}
+
+.cardFacility p {
+  margin-bottom: 0;
+  color: rgb(0, 195, 255);
+}
+
+.facility-container {
+  margin-bottom: 50px;
+}
+.swiper-slide {
+  position: relative;
+  width: 320px;
+  aspect-ratio: 3/4;
+  /* border-radius: 6px; */
+  /* border:1px solid black; */
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px;
+  border: inherit;
+  user-select: none;
+}
+.title {
+  justify-content: center;
+  text-align: center;
+  margin-top: 110px;
+}
+.title1 {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  font-weight: bold;
+  transform: translate(-50%, -30%);
+  -ms-transform: translate(-50%, -10%);
+  width: max-content;
+  text-align: center;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 2px solid black;
+  box-shadow: 0 4px 30px black;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  -webkit-backdrop-filter: blur(30px); /* Apply blur effect */
+  backdrop-filter: blur(100px); /* Standard syntax */
+  transition: all 0.5s linear;
+}
+.title span {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 ion-icon {
-    font-size: 50px;
-    align-items: center;
-    display: flex;
+  font-size: 50px;
+  align-items: center;
+  display: flex;
 }
 
 .slider-arrow-active ion-icon {
-    background-color: red; /* Change the background color of the icon */
-    border-radius: 50%; /* Optional: makes the background circular */
-    padding: 10px; /* Optional: adds space around the icon */
-  }
-
-
-
-
-.swiper-slide-active .title1{
-    bottom : -4px;
-    
+  background-color: red; /* Change the background color of the icon */
+  border-radius: 50%; /* Optional: makes the background circular */
+  padding: 10px; /* Optional: adds space around the icon */
 }
-.swiper-pagination-bullet{
-    width: 14px;
-    height: 14px;
-    background-color: red;
-    border-radius: 50%;
-    transition: all 0.3s ease-in-out;
+
+.swiper-slide-active .title1 {
+  bottom: -4px;
 }
-.arr-pagination{
-    display: flex;
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background-color: red;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
 }
-.swiper-pagination-bullet-active{
-  width:22px;
+.arr-pagination {
+  display: flex;
+}
+.swiper-pagination-bullet-active {
+  width: 22px;
   background-color: red;
   border-radius: 14px;
-
 }
 
 .slider-controler {
-    display: flex;
-    position: relative; /* For absolute positioning of arrows */
-    width: 100%; /* Ensure the container has full width */
-    justify-content:space-evenly;
-    padding-left: 350px;
-    padding-right: 350px;
-    padding-top: 50px;
+  display: flex;
+  position: relative; /* For absolute positioning of arrows */
+  width: 100%; /* Ensure the container has full width */
+  justify-content: space-evenly;
+  padding-left: 350px;
+  padding-right: 350px;
+  padding-top: 50px;
+}
+
+.slider-arrow {
+  top: 50%; /* Vertically center the arrows */
+  z-index: 10; /* Ensure arrows are above other elements */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.prev {
+  left: 10px; /* Position the left arrow */
+}
+
+.next {
+  right: 10px; /* Position the right arrow */
+}
+
+.swiper-pagination {
+  position: absolute;
+  top: 50%;
+  margin-top: 350px; /* Adjust the pagination if needed */
+}
+.slider-arrow:active {
+  background-color: lightcoral; /* Change the background color on click */
+  border-radius: 100%; /* Optional: make the arrow a circle when clicked */
+}
+
+@media (max-width: 768px) {
+  .slider-controler {
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  
-  .slider-arrow {
-    top: 50%; /* Vertically center the arrows */
-    z-index: 10; /* Ensure arrows are above other elements */
-    cursor: pointer; /* Change cursor on hover */
-  }
-  
-  
-  .prev {
-    left: 10px; /* Position the left arrow */
-  }
-  
-  .next {
-    right: 10px; /* Position the right arrow */
-  }
-  
-  .swiper-pagination {
-    position: absolute;
-    top:50%;
-    margin-top: 350px; /* Adjust the pagination if needed */
-  }
-  .slider-arrow:active {
-    background-color: lightcoral; /* Change the background color on click */
-    border-radius: 100%; /* Optional: make the arrow a circle when clicked */
-    
-  }
-  
-  @media (max-width: 768px) {
-    .slider-controler {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
 }
 @media (max-width: 768px) {
   .slider-controler {
-      padding-left: 20px;
-      padding-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 @media (max-width: 768px) {
   .swiper-slide {
-      width: 90%; /* Relative width instead of fixed */
-      max-width: 300px;
+    width: 90%; /* Relative width instead of fixed */
+    max-width: 300px;
   }
 }
 @media (max-width: 768px) {
   .Facilitycontainer {
-      justify-content: center;
+    justify-content: center;
   }
 }
 @media (max-width: 768px) {
   .slider-controler {
-      justify-content: space-between;  /* Spread arrows evenly */
-      padding-left: 30px;
-      padding-right: 30px;
+    justify-content: space-between; /* Spread arrows evenly */
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
