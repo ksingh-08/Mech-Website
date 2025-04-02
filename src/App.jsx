@@ -1,8 +1,7 @@
 
 import React from 'react'
-import Navbar from './Components/Navbar/Navbar'
+// import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
-// import Programs from './Components/Programs/Programs'
 import Contact from './Components/Contact/Contact'
 import About from './Components/About/About'
 import { BrowserRouter,Routes,Route } from 'react-router-dom';// line 1 added
@@ -16,18 +15,18 @@ import Page4 from './Components/Researchpages/Page4'
 import Page5 from './Components/Researchpages/Page5'
  
 import Faculty from './Components/Faculty/Faculty'
-import Facility from './Components/Facility/Facility'
-import Facility1 from './Components/FacilityPages/Facility1'
-import Facility2 from './Components/FacilityPages/Facility2'
-import Facility3 from './Components/FacilityPages/Facility3'
-import Facility4 from './Components/FacilityPages/Facility4'
-import Facility5 from './Components/FacilityPages/Facility5'
-import Facility6 from './Components/FacilityPages/Facility6'
-import Facility7 from './Components/FacilityPages/Facility7'
-import Facility8 from './Components/FacilityPages/Facility8'
+// import Facility from './Components/Facility/Facility'
+// import Facility1 from './Components/FacilityPages/Facility1'
+// import Facility2 from './Components/FacilityPages/Facility2'
+// import Facility3 from './Components/FacilityPages/Facility3'
+// import Facility4 from './Components/FacilityPages/Facility4'
+// import Facility5 from './Components/FacilityPages/Facility5'
+// import Facility6 from './Components/FacilityPages/Facility6'
+// import Facility7 from './Components/FacilityPages/Facility7'
+// import Facility8 from './Components/FacilityPages/Facility8'
 import Admission from './Components/Admission/Admission'
 import Career from './Components/Career/Career'
-import './index.css'; // or the correct path to your CSS file
+import './index.css'; 
 
 import EPage1 from './Components/ExtendedPages/Epage1'
 import EPage2 from './Components/ExtendedPages/Epage2'
@@ -56,9 +55,6 @@ const App = () => {
     <NavbarUpdated/>
        
        <Routes>
-      
-       
-
         <Route path="/" element={ <ScrollToTopLayout><Hero/></ScrollToTopLayout>}/>
            <Route path="/about" element={ <ScrollToTopLayout><About/></ScrollToTopLayout>} />
            {/* <Route path="/Programs" element={<ScrollToTopLayout><Programs/></ScrollToTopLayout>} /> */}

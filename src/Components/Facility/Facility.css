@@ -3,13 +3,13 @@
   margin-bottom: 50px;
 }
 
-.facility-preface {
-  text-align: center;
+/* .facility-preface { */
+/* text-align: center;
   margin: 20px auto;
   max-width: 800px;
   font-size: 1.2rem;
   color: #333;
-}
+} */
 
 .Facilitycontainer {
   display: flex;

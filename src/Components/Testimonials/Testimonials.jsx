@@ -5,7 +5,7 @@ import back_icon from '../../assets/back-icon.png'
  
 import user2 from '../../assets/user-2.png'
 import user3 from '../../assets/user-3.png'
- import Abhinav from '../../assets/Abhinav.jpg'
+import Abhinav from '../../assets/Abhinav.jpg'
 import chandan from '../../assets/chandan.jpeg'
 import Devika from '../../assets/Devika.jpeg'
 

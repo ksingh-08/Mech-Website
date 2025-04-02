@@ -3,9 +3,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import CardActionArea from '@mui/material/CardActionArea';
-import CardActions from '@mui/material/CardActions';
 import provide2 from '../assets/Inhouse.jpg'
 import { Link } from 'react-router-dom';
 export default function MultiActionAreaCard1() {
@@ -29,13 +27,6 @@ export default function MultiActionAreaCard1() {
           </Typography>
         </CardContent>
       </CardActionArea>
-      {/*       <CardActions>
-
-        <Button size="small" color="primary">
-          Read More
-        </Button>
-        
-      </CardActions>*/}
     </Card>
     </Link>
   );
