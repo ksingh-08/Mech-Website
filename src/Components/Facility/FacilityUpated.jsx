@@ -40,13 +40,13 @@ const FacilityUpdated = () => {
       <Title title="LAB FACILITIES" className="title2 pt-30" />
 
       {/* Preface Section */} 
-      <div className="facility-preface px-6 py-6 bg-black opacity-60 shadow-md rounded-md mb-6 max-w-3xl mx-auto relative bg-cover bg-center bg-no-repeat -z-10" style={{ backgroundImage: "url(${bgImage})" }}>
+      <div className="facility-preface px-6 py-6 bg-red-800 bg-opacity-20 shadow-md rounded-md mb-6 max-w-3xl mx-auto relative bg-cover bg-center bg-no-repeat -z-10" style={{ backgroundImage: "url(${bgImage})" }}>
       <p className="text-white text-lg leading-relaxed">
       At <strong className='text-red-800 font-semibold'>LNMIIT</strong>, we are at the forefront of <strong className='text-red-800 font-semibold'>welding research and innovation</strong>, 
       providing cutting-edge solutions for industries of all scales. Whether you're a <strong className='text-red-800 font-semibold'>large enterprise </strong> 
       seeking advanced welding techniques or a <strong className='text-red-800 font-semibold'>growing business</strong> looking for expert consultancy, 
       our state-of-the-art <strong className='text-red-800 font-semibold'>welding research lab</strong> is equipped to meet all your needs. <br /><br />
-      <h3><strong className='text-red-800 font-semibold'>Explore our world-class facilities and discover the future of welding technology.</strong></h3>
+      <h3><strong className='text-red-800 font-semibold'>Explore our world-class facilities and discover the future of welding technology: </strong></h3>
     </p>
   </div>
 
