@@ -18,11 +18,11 @@ const Fac1Updated = () => {
             className="w-full h-full object-cover opacity-20 filter grayscale"
             alt="Background"
           />
-          <div className="absolute inset-0 bg-red-500 opacity-20"></div> {/* Red Tint */}
+          <div className="absolute inset-0 bg-blue-500 opacity-20"></div> {/* Red Tint */}
         </div>
 
         <div className="relative text-center my-24">
-          <h1 className="text-2xl sm:text-5xl font-semibold max-w-[700px] mx-auto mt-36 pb-2">
+          <h1 className="text-2xl sm:text-5xl font-semibold max-w-[700px] mx-auto pb-2">
             Shielded Metal Arc Welding (SMAW)
           </h1>
         </div>
