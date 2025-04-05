@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 import slide_image1 from '../../newpics/SMAW.jpeg';
 import slide_image2 from '../../newpics/SAW.jpeg';
 import slide_image3 from '../../newpics/GMAW.jpeg';
-import slide_image4 from '../../assets/fl4.png';
+import slide_image4 from '../../assets/gtaw.png';
 import slide_image5 from '../../assets/fl5.jpg';
 import slide_image6 from '../../newpics/Robotic.jpeg';
 import slide_image7 from '../../newpics/Plasma.jpeg';

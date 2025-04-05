@@ -30,20 +30,11 @@ void main() {
 
     // skip the center vertex of the disc geometry
     if (gl_VertexID > 0) {
-        // stretch the disc according to the axis and velocity of the rotation
-        vec3 rotationAxis = uRotationAxisVelocity.xyz;
-        float rotationVelocity = min(.15, uRotationAxisVelocity.w * 15.);
-        // the stretch direction is orthogonal to the rotation axis and the position
-        vec3 stretchDir = normalize(cross(centerPos, rotationAxis));
-        // the position of this vertex relative to the center position
-        vec3 relativeVertexPos = normalize(worldPosition.xyz - centerPos);
-        // vertices more in line with the stretch direction get a larger offset
-        float strength = dot(stretchDir, relativeVertexPos);
-        float invAbsStrength = min(0., abs(strength) - 1.);
-        strength = rotationVelocity * sign(strength) * abs(invAbsStrength * invAbsStrength * invAbsStrength + 1.);
-        // apply the stretch distortion
-        worldPosition.xyz += stretchDir * strength;
-    }
+  vec3 rotationAxis = uRotationAxisVelocity.xyz;
+  float rotationVelocity = min(.05, uRotationAxisVelocity.w * 5.); // Reduced intensity
+  vec3 stretchDir = normalize(cross(centerPos, rotationAxis));
+  worldPosition.xyz += stretchDir * rotationVelocity * 0.1; // Simplified effect
+}
 
     // move the vertex back to the overall sphere
     worldPosition.xyz = radius * normalize(worldPosition.xyz);
@@ -727,8 +718,8 @@ class InfiniteGridMenu {
     const SCALE_INTENSITY = 0.6;
     positions.forEach((p, ndx) => {
       const s = (Math.abs(p[2]) / this.SPHERE_RADIUS) * SCALE_INTENSITY + (1 - SCALE_INTENSITY);
-      const finalScale = s * scale;
-      const matrix = mat4.create();
+      const finalScale = scale; // Fixed scale
+    const matrix = mat4.create();
       mat4.multiply(matrix, matrix, mat4.fromTranslation(mat4.create(), vec3.negate(vec3.create(), p)));
       mat4.multiply(matrix, matrix, mat4.targetTo(mat4.create(), [0, 0, 0], p, [0, 1, 0]));
       mat4.multiply(matrix, matrix, mat4.fromScaling(mat4.create(), [finalScale, finalScale, finalScale]));
