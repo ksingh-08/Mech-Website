@@ -926,7 +926,11 @@ export default function InfiniteMenu({ items = [] }) {
         ref={canvasRef}
         className="cursor-grab w-full h-full overflow-hidden relative outline-none active:cursor-grabbing"
       />
-
+<div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-center">
+        <p className="text-sm text-white/100 bg-black/30 px-3 py-1 rounded-full">
+          ← Drag to explore more →
+        </p>
+      </div>
 {activeItem && (
   <>
     {/* Title - Now with better contrast and positioning */}
@@ -935,10 +939,14 @@ export default function InfiniteMenu({ items = [] }) {
         select-none
         absolute
         font-black
-        text-6xl
+        text-4xl
+        text-center
+        md:text-6xl
         left-[10%]
         top-1/2
-        translate-x-[-10%]
+        md:translate-x-[-10%]
+        translate-y-[-250%]
+        md:translate-y-[0%]
         max-w-[13ch]
         px-6 py-4
         bg-white/90
@@ -964,6 +972,8 @@ export default function InfiniteMenu({ items = [] }) {
         text-xl
         top-1/2
         right-[10%]
+         translate-y-[150%]
+        md:translate-y-[0%]
         px-5 py-3
         bg-white/90
         rounded-lg
