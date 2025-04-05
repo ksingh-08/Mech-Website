@@ -1,28 +1,33 @@
-import React from 'react'
-import './Epage1.css'
-import provide3 from '../../assets/Inhouse.jpg'
+import React from 'react';
+import provide3 from '../../assets/Inhouse.jpg';
 
 const Epage3 = () => {
   return (
-    <div>
-         
-    <div class="container8">
-    <h1 className="heading1">In-House Training Program:</h1>
-    <div className="content-wrapper">
-    <div className="image-container ">
-    <img className='fotu8' src={provide3} alt="Description Image" class="center3"/>
-    </div>
-    <div class="description8">
+    <div className="bg-white py-16 px-4 flex justify-center items-center min-h-screen">
+      <div className="max-w-6xl w-full bg-white shadow-xl rounded-3xl overflow-hidden border border-gray-200 flex flex-col md:flex-row">
+        
+        <div className="md:w-1/2 flex justify-center items-center p-6 bg-gray-100">
+          <img
+            src={provide3}
+            alt="Workshop Environment"
+            className="rounded-2xl object-cover w-full h-full max-h-[400px]"
+          />
+        </div>
+        
+        <div className="md:w-1/2 p-8 flex flex-col justify-center">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Workshop Facility</h2>
+          <p className="text-gray-700 leading-relaxed">
+            Our advanced workshop is equipped for hands-on training, welding research, and project development. 
+            With cutting-edge tools and safety gear, it simulates real-world welding environments for effective learning.
+            <br /><br />
+            From refining welding techniques to conducting experiments, our space empowers learners to gain practical skills 
+            and industry-ready experience.
+          </p>
+        </div>
 
-      <p>Our dedicated workshop provides a well-equipped and conducive environment for hands-on welding training, research, and development activities. Equipped with state-of-the-art welding machines, tools, and safety equipment, our workshop is designed to simulate real-world welding conditions and facilitate practical learning experiences. Whether you're practicing welding techniques, conducting experiments, or working on welding projects, our workshop offers the resources and support you need to achieve your goals.</p>
+      </div>
     </div>
-  </div>
-  </div>
-      
-     
-      
-    </div>
-  )
-}
+  );
+};
 
-export default Epage3
+export default Epage3;

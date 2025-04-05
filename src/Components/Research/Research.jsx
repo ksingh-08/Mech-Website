@@ -14,8 +14,11 @@ import Title from '../Title/Title'
 const Research = () => {
 
   return (
+    
     <div className="outerres">
+      
      <Title subTitle='Research' title='Explore. Discover. Innovate.'/>
+     
      <br />
      <br />
     <div className="container21">

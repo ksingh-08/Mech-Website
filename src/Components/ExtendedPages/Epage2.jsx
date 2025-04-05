@@ -1,30 +1,32 @@
 import React from 'react';
-import './Epage1.css';
 import provide2 from '../../assets/Workshop.jpg';
 
 const Epage2 = () => {
   return (
-    <div>
-      
-    <div className="container8">
-      <h1 className="heading1">In-House Training Program:</h1>
-      <div className="content-wrapper">
-        <div className="image-container ">
-          <img className="fotu8 " src={provide2} alt="Welding Training Program" width="300" height="300"  class="center" />
+    <div className="bg-white py-16 px-4 flex justify-center items-center min-h-screen">
+      <div className="max-w-7xl w-full bg-white shadow-xl rounded-3xl overflow-hidden border border-gray-200 flex flex-col md:flex-row">
+        
+        <div className="md:w-1/2 flex justify-center items-center p-6 bg-gray-100">
+          <img
+            src={provide2}
+            alt="Welding Training Program"
+            className="rounded-2xl object-cover w-full h-full max-h-[400px]"
+          />
         </div>
-        <div className="description8">
-          <p>
-            We provide comprehensive in-house training programs for individuals and organizations looking to enhance 
-            their welding skills and knowledge. Our training programs cover a wide range of topics, including welding 
-            techniques, safety practices, equipment operation, and industry standards. Led by experienced instructors, 
-            our hands-on training sessions are designed to equip participants with the practical skills and theoretical 
-            understanding necessary to excel in the field of welding. Whether you're a beginner looking to learn the 
-            basics or an experienced welder seeking advanced training, our in-house programs offer valuable learning 
-            opportunities for all skill levels.
+        
+        <div className="md:w-1/2 p-8 flex flex-col justify-center">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">In-House Training Program</h2>
+          <p className="text-gray-700 leading-relaxed">
+            We offer in-depth in-house training programs for individuals and organizations to build welding expertise. 
+            From safety protocols and hands-on techniques to modern equipment and best practices, our sessions cater to 
+            all skill levels under expert guidance.
+            <br /><br />
+            Whether you're starting your welding journey or seeking advanced insights, our practical and research-driven 
+            curriculum ensures valuable learning outcomes for everyone involved.
           </p>
         </div>
+
       </div>
-    </div>
     </div>
   );
 };

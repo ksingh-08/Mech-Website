@@ -44,6 +44,7 @@ import Fac7Updated from './Components/FacilityPages/Fac7Updated'
 import Fac8Updated from './Components/FacilityPages/Fac8Updated'
 import Scope from './Components/Scope/Scope'
 import FacUpdate from './Components/Facility/InfiniteMenu';
+import ResearchUpdate from './Components/Research/ResearchUpdate';
 
 
 const App = () => {
@@ -61,7 +62,7 @@ const App = () => {
            {/* <Route path="/Programs" element={<ScrollToTopLayout><Programs/></ScrollToTopLayout>} /> */}
            <Route path="/contact" element={ <ScrollToTopLayout><Contact/></ScrollToTopLayout>} />
            <Route path="/wonder" element={<ScrollToTopLayout><Wonder/></ScrollToTopLayout>} />
-           <Route path="/research" element={<ScrollToTopLayout><Research/></ScrollToTopLayout>} />
+           <Route path="/research" element={<ScrollToTopLayout><ResearchUpdate/></ScrollToTopLayout>} />
            <Route path="/page1" element={<ScrollToTopLayout><Page1/></ScrollToTopLayout>} />
            <Route path="/page2" element={<ScrollToTopLayout><Page2/></ScrollToTopLayout>} />
            <Route path="/page3" element={<ScrollToTopLayout><Page3/></ScrollToTopLayout>} />

@@ -68,22 +68,22 @@ const NavbarUpdated = () => {
   className={` ${scrolling ? "w-full rounded-none transition-all" : 'rounded-xl transition-all'} absolute  top-20 left-0 w-full bg-gray-900 text-white flex flex-col items-center gap-6 py-4 shadow-lg md:hidden transition-all duration-300 ease-in-out ${openMenu ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}
 >
   <li className='hover:scale-105'>
-    <a href="/" className="text-xl font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full">Home</a>
+    <a href="/" onClick={() => setOpenMenu(false)} className="text-xl font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full">Home</a>
   </li>
   <li className="hover:scale-105">
-    <NavLink href="/scope" className="text-xl font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/scope">Why LNMIIT?</NavLink>
+    <NavLink href="/scope" onClick={() => setOpenMenu(false)}  className="text-xl font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/scope">Why LNMIIT?</NavLink>
   </li>
   <li className='hover:scale-105'>
-    <NavLink href="/about" className="text-xl font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/about">About</NavLink>
+    <NavLink href="/about" onClick={() => setOpenMenu(false)}  className="text-xl font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/about">About</NavLink>
   </li>
   {/* <li className='hover:scale-105'>
     <NavLink href="/career" className="text-xl font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/career">Careers</NavLink>
   </li> */}
   <li className='hover:scale-105'>
-    <NavLink href="/facility" className="text-xl font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/facility">Facility</NavLink>
+    <NavLink href="/facility" onClick={() => setOpenMenu(false)}  className="text-xl font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/facility">Facility</NavLink>
   </li>
   <li className='hover:scale-105'>
-    <NavLink href="/research" className="text-xl font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/research">Research</NavLink>
+    <NavLink href="/research" onClick={() => setOpenMenu(false)}  className="text-xl font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/research">Research</NavLink>
   </li> 
 </ul>
 

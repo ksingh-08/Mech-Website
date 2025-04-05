@@ -27,7 +27,7 @@
 
 .hero-text h1 {
   font-weight: 600; /* Increased font weight */
-  font-size: 40px; /* Increased size */
+  font-size: 35px; /* Increased size */
 }
 
 .hero-text p {
@@ -57,7 +57,7 @@
 }
 
 .main-title {
-  font-size: 36px; /* Adjust as needed */
+  font-size: 50px; /* Adjust as needed */
   font-weight: bold;
   color: #212ea0;
 }
@@ -90,7 +90,7 @@
 
 /* Removed highlighting effect */
 #highlightText {
-  font-size: 60px;
+  font-size: 70px;
   color: white;
   font-weight: bold;
 }

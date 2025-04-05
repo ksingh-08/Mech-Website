@@ -6,8 +6,8 @@ import ClickSpark from './UI/ClickSpark.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ClickSpark>
+    
     <App />
-    </ClickSpark>
+    
   </React.StrictMode>,
 )

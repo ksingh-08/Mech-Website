@@ -18,7 +18,7 @@ import MultiActionAreaCard3 from '../../UI/MultiActionCard3'
 
 const ExtendedUpdated = () => {
   return (
-    <div className=' programs flex flex-wrap gap-4 justify-center'>
+    <div className=' programs flex flex-wrap gap-x-10 justify-center'>
         <div className="program">
         <MultiActionAreaCard1/>
         </div>
