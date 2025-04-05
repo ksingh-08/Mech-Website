@@ -926,7 +926,7 @@ export default function InfiniteMenu({ items = [] }) {
         ref={canvasRef}
         className="cursor-grab w-full h-full overflow-hidden relative outline-none active:cursor-grabbing"
       />
-<div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-center">
+<div className={`absolute md:bottom-2 bottom-32 left-1/2 transform -translate-x-1/2 text-center ${isMoving ? 'opacity-0' : 'opacity-100'}`}>
         <p className="text-sm text-white/100 bg-black/30 px-3 py-1 rounded-full">
           ← Drag to explore more →
         </p>
@@ -935,89 +935,106 @@ export default function InfiniteMenu({ items = [] }) {
   <>
     {/* Title - Now with better contrast and positioning */}
     <h2
-      className={`
-        select-none
-        absolute
-        font-black
-        text-4xl
-        text-center
-        md:text-6xl
-        left-[10%]
-        top-1/2
-        md:translate-x-[-10%]
-        translate-y-[-250%]
-        md:translate-y-[0%]
-        max-w-[13ch]
-        px-6 py-4
-        bg-white/90
-        rounded-xl
-        shadow-lg
-        transition-all
-        ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
-        ${isMoving
-          ? 'opacity-0 pointer-events-none duration-100 translate-x-[-20px]'
-          : 'opacity-100 pointer-events-auto duration-500 translate-x-0'
-        }
-      `}
-    >
-      {activeItem.title}
-    </h2>
+  className={`
+    select-none
+    absolute
+    font-black
+    text-4xl
+    md:text-6xl
+    w-full
+    md:w-auto
+    text-center
+    left-1/2
+    md:left-[10%]
+    top-[30%]      // Higher position on mobile
+    md:top-1/2     // Original position on desktop
+    transform
+    -translate-x-1/2  // Center horizontally on mobile
+    md:translate-x-[-10%]  // Original desktop positioning
+    -translate-y-1/2
+    max-w-[90vw]   // Better mobile width control
+    md:max-w-[13ch]
+    px-6 py-4
+    bg-white/90
+    rounded-xl
+    shadow-lg
+    transition-all
+    ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
+    ${isMoving
+      ? 'opacity-0 pointer-events-none duration-100 md:translate-x-[-20px]'
+      : 'opacity-100 pointer-events-auto duration-500 md:translate-x-0'
+    }
+  `}
+>
+  {activeItem.title}
+</h2>
 
     {/* Description - Better readability with constrained width */}
     <p
-      className={`
-        select-none
-        absolute
-        max-w-[24ch]
-        text-xl
-        top-1/2
-        right-[10%]
-         translate-y-[150%]
-        md:translate-y-[0%]
-        px-5 py-3
-        bg-white/90
-        rounded-lg
-        shadow-md
-        transition-all
-        ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
-        ${isMoving
-          ? 'opacity-0 pointer-events-none duration-100 translate-x-[20px] -translate-y-1/2'
-          : 'opacity-100 pointer-events-auto duration-500 translate-x-0 -translate-y-1/2'
-        }
-      `}
-    >
-      {activeItem.description}
-    </p>
+  className={`
+    select-none
+    absolute
+    text-lg
+    md:text-xl
+    w-[90vw]       // Full width on mobile
+    md:w-auto      // Auto width on desktop
+    max-w-[24ch]
+    left-1/2       // Center on mobile
+    md:left-auto   // Reset for desktop
+    md:right-[10%] // Original desktop position
+    top-[60%]      // Position below on mobile
+    md:top-1/2     // Original desktop position
+    transform
+    -translate-x-1/2 // Center horizontally on mobile
+    md:translate-x-0  // Reset for desktop
+    translate-y-[0]   // Reset mobile vertical
+    md:-translate-y-1/2 // Original desktop vertical
+    px-5 py-3
+    bg-white/90
+    rounded-lg
+    shadow-md
+    text-center    // Center text on mobile
+    md:text-left   // Left align on desktop
+    transition-all
+    ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
+    ${isMoving
+      ? 'opacity-0 pointer-events-none duration-100 md:translate-x-[20px]'
+      : 'opacity-100 pointer-events-auto duration-500 md:translate-x-0'
+    }
+  `}
+>
+  {activeItem.description}
+</p>
 
     {/* Action Button - More modern styling */}
     <div
-      onClick={handleButtonClick}
-      className={`
-        absolute
-        left-1/2
-        z-20
-        w-14
-        h-14
-        grid
-        place-items-center
-        bg-[#00ffff]
-        border-4
-        border-black
-        rounded-full
-        cursor-pointer
-        shadow-lg
-        hover:bg-gray-100
-        active:scale-95
-        transition-all
-        ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
-        ${isMoving
-          ? 'bottom-[-80px] opacity-0 pointer-events-none duration-100 scale-50 -translate-x-1/2'
-          : 'bottom-12 opacity-100 pointer-events-auto duration-300 scale-100 -translate-x-1/2'
-        }
-      `}
-    >
-      <span className="text-2xl font-bold">↗</span>
-    </div>
+  onClick={handleButtonClick}
+  className={`
+    absolute
+    left-1/2
+    z-20
+    w-14
+    h-14
+    grid
+    place-items-center
+    bg-[#00ffff]
+    border-4
+    border-black
+    rounded-full
+    cursor-pointer
+    shadow-lg
+    hover:bg-gray-100
+    active:scale-95
+    transition-all
+    ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
+    ${isMoving
+      ? 'bottom-[-80px] opacity-0 pointer-events-none duration-100 scale-50 -translate-x-1/2'
+      : 'bottom-[20vh] md:bottom-12 opacity-100 pointer-events-auto duration-300 scale-100 -translate-x-1/2'
+    }
+  `}
+>
+  <span className="text-2xl font-bold">↗</span>
+</div>
   </>
 )}
     </div>
