@@ -16,10 +16,11 @@ p {
 }
 
 
-.heading {
+.heading1 {
   color: #920409;
   font-size: 28px;
   margin: 0; 
+  font-weight: 500;
   padding-top: 20px; 
   margin-bottom: 20px;
   text-align: center;

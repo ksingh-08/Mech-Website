@@ -1,6 +1,7 @@
 {
-	"$schema": "https://unpkg.com/jsrepo@1.45.1/schemas/project-config.json",
+	"$schema": "https://unpkg.com/jsrepo@1.45.3/schemas/project-config.json",
 	"repos": [
+		"https://reactbits.dev/tailwind",
 		"https://reactbits.dev/default"
 	],
 	"includeTests": false,

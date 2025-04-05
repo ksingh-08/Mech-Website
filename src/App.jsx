@@ -43,6 +43,7 @@ import Fac6Updated from './Components/FacilityPages/Fac6Updated'
 import Fac7Updated from './Components/FacilityPages/Fac7Updated'
 import Fac8Updated from './Components/FacilityPages/Fac8Updated'
 import Scope from './Components/Scope/Scope'
+import FacUpdate from './Components/Facility/InfiniteMenu';
 
 
 const App = () => {

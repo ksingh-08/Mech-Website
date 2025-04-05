@@ -7,7 +7,7 @@ const Epage1 = () => {
     <div>
          
     <div className="container8">
-    <h1 className="heading">In-House Training Program:</h1>
+    <h1 className="heading1">In-House Training Program:</h1>
     <div className="content-wrapper">
     <div className="image-container ">
     <img className='fotu8' src={provide1} alt="Description Image" class="center2"/>
