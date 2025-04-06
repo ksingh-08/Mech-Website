@@ -3,7 +3,9 @@ import provide1 from '../../assets/IC.jpg';
 
 const Epage1 = () => {
   return (
+    
     <div className="bg-white py-16 px-4 flex justify-center items-center min-h-screen">
+       
       <div className="max-w-6xl w-full bg-white shadow-xl rounded-3xl overflow-hidden border border-gray-200 flex flex-col md:flex-row">
         
         <div className="md:w-1/2 flex justify-center items-center p-6 bg-gray-100">
@@ -24,9 +26,12 @@ const Epage1 = () => {
             and innovative welding solutions backed by research and field expertise.
           </p>
         </div>
+        
 
       </div>
+     
     </div>
+   
   );
 };
 
