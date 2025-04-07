@@ -121,59 +121,62 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Importance of Welding Research",
-    // company_name: "Starbucks",
+    title: "Why Welding Research Matters",
     icon: welding,
     iconBg: "white",
-    //date: "March 2020 - April 2021",
     points: [
-      "Welding is the backbone of industries like aerospace, shipbuilding, railways, and defense, ensuring structural integrity and long-term durability. Our advanced research at LNMIIT focuses on enhancing welding techniques, improving material strength, and optimizing cost-effective solutions for industrial applications."
+      "<strong>Welding is the backbone</strong> of modern infrastructure—powering sectors like <strong>aerospace, shipbuilding, railways, and defense</strong>. At <strong>LNMIIT</strong>, our research ensures <strong>structural integrity, improved efficiency</strong>, and <strong>cutting-edge innovations</strong> to meet the growing industrial demands of the 21st century."
     ],
   },
   {
-    title: "Cutting-Edge Research Areas",
-    //company_name: "Tesla",
+    title: "Our Research Focus Areas",
     icon: research,
     iconBg: "white",
-    //date: "Jan 2021 - Feb 2022",
     points: [
-      "Our work spans across multiple domains, including:Developing and maintaining web applications using React.js and other related technologies.",
-      "Advanced Welding Processes (Friction Stir Welding, Laser Welding, Hybrid Welding)",
-      "Automated & AI-driven Welding for precision and efficiency",
-      "Failure Analysis & Testing to ensure reliability in critical applications",
+      "We work at the <strong>intersection of innovation and practicality</strong>, tackling real-world challenges across domains like:",
+      "<strong>Advanced Welding Techniques</strong>: Friction Stir Welding, Laser Welding, Hybrid Welding.",
+      "<strong>AI-Powered Welding Automation</strong> for unmatched <strong>precision and productivity</strong>.",
+      "<strong>Failure Analysis & Material Testing</strong> to ensure safety in high-stakes applications.",
+      "<strong>Thermal Modelling & Simulation</strong> for predicting weld behavior and optimizing processes.",
     ],
   },
   {
-    title: "Industry Collaboration & Impact",
-    //company_name: "Shopify",
+    title: "Collaboration with Industry Leaders",
     icon: industry,
     iconBg: "white",
-    //date: "Jan 2022 - Jan 2023",
     points: [
-      "We collaborate with leading organizations like DRDO, HAL, Metro Railway, and Shipyards to develop next-gen welding techniques. Our research has led to stronger, lightweight structures, reduced defects, and enhanced safety, driving innovation across sectors.",
+      "We collaborate with <strong>DRDO, HAL, Indian Railways, and major Shipyards</strong> to develop <strong>next-generation welding technologies</strong>.",
+      "<strong>Outcome-driven innovation</strong> has led to the creation of <strong>stronger, lighter</strong>, and <strong>more reliable structures</strong>, enhancing safety and cost-effectiveness across sectors.",
     ],
   },
   {
-    title: "State-of-the-Art Facilities",
-    //company_name: "Meta",
+    title: "World-Class Infrastructure at LNMIIT",
     icon: facilities,
-    iconBg:"white",
-    //date: "Jan 2023 - Present",
+    iconBg: "white",
     points: [
-      "LNMIIT houses dedicated welding labs equipped with robotic welders, high-precision lasers, and thermal imaging systems. Our research infrastructure enables real-world simulations, ensuring solutions that meet industry standards and regulatory requirements.",
+      "<strong>LNMIIT boasts state-of-the-art labs</strong> equipped with:",
+      "<strong>Robotic Welding Arms</strong>",
+      "<strong>High-Precision Laser Systems</strong>",
+      "<strong>Thermal Imaging for Real-Time Monitoring</strong>",
+      "<strong>Advanced Material Characterization Tools</strong>",
+      "Our setup supports <strong>industrial-grade testing, training, and prototyping</strong>, bridging the gap between research and real-world application.",
     ],
   },
   {
-    title: "Future Innovations & Opportunities",
-    //company_name: "Meta",
+    title: "Shaping the Future of Welding",
     icon: future,
     iconBg: "white",
-    //date: "Jan 2023 - Present",
     points: [
-      "We are pioneering research in green welding technologies, smart sensors for real-time quality monitoring, and AI-powered defect detection. Companies and researchers can partner with us for funded projects, industrial consultancy, and workforce training to push the boundaries of welding technology.",
+      "We are pioneering in areas like:",
+      "<strong>Green Welding Technologies</strong> for a sustainable future",
+      "<strong>Smart Sensors</strong> for live defect detection and process control",
+      "<strong>AI & Machine Learning</strong> for predictive maintenance and quality assurance",
+      "At LNMIIT, we offer <strong>industrial consultancy, sponsored research, and hands-on training</strong>, empowering the next generation of welding innovators.",
     ],
   },
 ];
+
+
 
 const testimonials = [
   {
