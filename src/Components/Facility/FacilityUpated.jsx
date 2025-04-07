@@ -16,6 +16,7 @@ import slide_image5 from '../../assets/fl5.jpg';
 import slide_image6 from '../../newpics/Robotic.jpeg';
 import slide_image7 from '../../newpics/Plasma.jpeg';
 import slide_image8 from '../../assets/fl8.jpg';
+import slide_image9 from '../../newpics/3axis.jpeg'
 import Particles from '../../UI/Particles';
 import bgImage from '../../assets/twi.png'
 
@@ -70,7 +71,13 @@ const SLIDES = [
     link: "/facility8",
     title: "Consumable Development",
     description: "Research and development of high-performance welding consumables and materials."
-  }
+  },
+  {
+    image: slide_image9,
+    link: "/facility9",
+    title: "3 Axis Welding Manipulator",
+    description: "A mechanized welding system that allows precise, programmable movement of the welding torch in three dimensions to enhance weld accuracy, consistency, and automation."
+  },
 ];
 
 

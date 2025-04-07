@@ -29,7 +29,7 @@ import { motion } from "framer-motion";
 
 const Page3 = () => {
   return (
-    <div className="min-h-screen flex justify-center bg-gradient-to-b from-white to-gray-100 pt-28 pb-10 md:p-4 ">
+    <div className="min-h-screen flex justify-center bg-gradient-to-b from-white to-gray-100 pt-32 pb-10 ">
 
       <motion.div
         initial={{ opacity: 0, scale: 0.95, y: 30 }}
