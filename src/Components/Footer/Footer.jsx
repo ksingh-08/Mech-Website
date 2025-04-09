@@ -99,7 +99,7 @@ const Footer = () => {
       </footer>
       <div className='legal'>
         <p>
-            Copyright © 2024 LNMIIT |&nbsp; All rights reserved | Last updated on: April 12, 2024 | For web support, reach us at :
+            Copyright © 2024 LNMIIT |&nbsp; All rights reserved | Last updated on: April 9, 2025 | For web support, reach us at :
             <a  href="mailto:web.support@lnmiit.ac.in">web.support@lnmiit.ac.in</a>
         </p>
       </div>
