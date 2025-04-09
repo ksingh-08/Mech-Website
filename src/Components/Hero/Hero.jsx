@@ -38,9 +38,10 @@ const Hero = () => {
       </div>
       
       <div className="container">
+        
         <Title subTitle='Our Expertise' title='What We Provide'/>
         <ExtendedUpdated/>
-
+        
         <Title subTitle='GALLERY' title='Lab Photos'/>
         <PhotosUpdated/>
         

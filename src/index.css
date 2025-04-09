@@ -48,6 +48,10 @@ a{
 }
 
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 130px; /* Adjust to match navbar height */
+  }
 .btn:hover
 {
     transform: scale(1.02);

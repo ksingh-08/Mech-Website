@@ -32,14 +32,14 @@ import { motion } from "framer-motion";
 
 const Page2 = () => {
   return (
-    <div className="min-h-screen flex justify-center bg-gradient-to-b from-white to-gray-100 pt-32 pb-10 ">
+    <div className="min-h-screen flex justify-center bg-gradient-to-b from-white to-gray-100 md:p-auto pt-32 md:pl-0 md:pr-0 pl-4 pr-4 pb-10 ">
 
       <motion.div
         initial={{ opacity: 0, scale: 0.95, y: 30 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="rounded-3xl bg-white/30 backdrop-blur-lg border border-gray-200 shadow-xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 max-w-7xl w-full"
+        className="rounded-3xl bg-white/30 backdrop-blur-lg border border-gray-200 shadow-xl p-8 flex flex-col md:flex-row items-center gap-10 max-w-7xl w-full"
       >
         
         <img
@@ -50,7 +50,7 @@ const Page2 = () => {
 
       
         <div className="text-gray-800">
-        <h2 className="text-3xl font-bold mt-12 mb-4 text-gray-900">
+        <h2 className="text-3xl font-bold mt-2 mb-4 text-gray-900">
         Experimental analysis of dissimilar metal weld joint: Ferritic to austenitic stainless steel
 </h2>
 

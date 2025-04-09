@@ -4,7 +4,7 @@ import provide1 from '../../assets/IC.jpg';
 const Epage1 = () => {
   return (
     
-    <div className="bg-white py-16 px-4 flex justify-center items-center min-h-screen">
+    <div className="bg-white flex justify-center items-center min-h-screen md:p-auto pt-32 md:pl-0 md:pr-0 pl-4 pr-4 pb-10">
        
       <div className="max-w-6xl w-full bg-white shadow-xl rounded-3xl overflow-hidden border border-gray-200 flex flex-col md:flex-row">
         

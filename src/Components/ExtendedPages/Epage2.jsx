@@ -3,7 +3,7 @@ import provide2 from '../../assets/Workshop.jpg';
 
 const Epage2 = () => {
   return (
-    <div className="bg-white py-16 px-4 flex justify-center items-center min-h-screen">
+    <div className="bg-white flex justify-center items-center min-h-screen md:p-auto pt-32 md:pl-0 md:pr-0 pl-4 pr-4 pb-10">
       <div className="max-w-7xl w-full bg-white shadow-xl rounded-3xl overflow-hidden border border-gray-200 flex flex-col md:flex-row">
         
         <div className="md:w-1/2 flex justify-center items-center p-6 bg-gray-100">
