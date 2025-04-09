@@ -20,10 +20,10 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setResult("Sending....")
-
+    console.log(form.current)
     emailjs
-      .sendForm('service_4bsskmd', 'template_q3tmk3t', form.current, {
-        publicKey: 'FiTXJkluYvjent7Ls',
+      .sendForm('service_j8cpddp', 'template_opqet78', form.current, {
+        publicKey: 'CopLW5vHMyTqo_kwJ',
       })
       .then(
         (result) => {

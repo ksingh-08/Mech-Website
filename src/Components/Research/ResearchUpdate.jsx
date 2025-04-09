@@ -55,7 +55,7 @@ const ResearchUpdate = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeIn' }}
             viewport={{ once: true }}
-            className="flex flex-col md:flex-row items-center bg-white shadow-md p-6 rounded-xl max-w-6xl mx-auto"
+            className="flex flex-col md:flex-row items-center bg-white shadow-md p-6 rounded-xl max-w-5xl mx-auto"
           >
             <div className="w-full md:w-[350px] h-[200px] mb-4 md:mb-0 flex-shrink-0">
               <img
@@ -72,7 +72,7 @@ const ResearchUpdate = () => {
                 <StarBorder
                   as="button"
                   className="mt-4 text-white"
-                  color="cyan"
+                  color="white"
                   speed="5s"
                 >
                   See More
