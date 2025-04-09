@@ -31,7 +31,7 @@ import { motion } from "framer-motion";
 
 const Page5= () => {
   return (
-    <div className="min-h-screen flex justify-center bg-gradient-to-b from-white to-gray-100 pt-32 pb-10 ">
+    <div className="min-h-screen flex justify-center bg-gradient-to-b from-white to-gray-100 md:p-auto pt-32 md:pl-0 md:pr-0 pl-4 pr-4 pb-10 ">
 
       <motion.div
         initial={{ opacity: 0, scale: 0.95, y: 30 }}
@@ -49,7 +49,7 @@ const Page5= () => {
 
       
         <div className="text-gray-800">
-        <h2 className="text-3xl font-bold mt-12 mb-4 text-gray-900">
+        <h2 className="text-3xl font-bold mt-2 mb-4 text-gray-900">
         A robust Taguchi combined AHP approach for optimizing AISI 1023 low carbon steel weldments in the SAW process
 </h2>
 

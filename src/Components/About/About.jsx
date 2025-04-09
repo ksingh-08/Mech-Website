@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-100 md:p-4 pt-20 pb-10">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-100 md:p-auto pt-32 md:pl-0 md:pr-0 pl-4 pr-4 pb-10">
       <motion.div
         initial={{ opacity: 0, scale: 0.95, y: 30 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}

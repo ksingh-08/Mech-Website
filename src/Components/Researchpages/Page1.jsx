@@ -44,14 +44,14 @@ import { motion } from "framer-motion";
 
 const Page1 = () => {
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gradient-to-b from-white to-gray-100 pt-32 pb-10">
+    <div className="min-h-screen flex justify-center items-center bg-gradient-to-b from-white to-gray-100 md:p-auto pt-32 md:pl-0 md:pr-0 pl-4 pr-4 pb-10">
 
       <motion.div
         initial={{ opacity: 0, scale: 0.95, y: 30 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="rounded-3xl bg-white/30 backdrop-blur-lg border border-gray-200 shadow-xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 max-w-7xl w-full"
+        className="rounded-3xl bg-white/30 backdrop-blur-lg border border-gray-200 shadow-xl p-8 flex flex-col md:flex-row items-center gap-10 max-w-7xl w-full"
       >
         
         <img
@@ -62,7 +62,7 @@ const Page1 = () => {
 
       
         <div className="text-gray-800">
-        <h2 className="text-3xl font-bold mt-12 mb-4 text-gray-900">
+        <h2 className="text-3xl font-bold mt-2 mb-5 text-gray-900">
   Modelling of the effects of welding conditions on dilution of stainless steel claddings produced by gas metal arc welding procedures
 </h2>
 
@@ -76,9 +76,9 @@ const Page1 = () => {
           <p className="mb-4 text-gray-700 leading-relaxed">
           This comparative study reveals that dilution obtained in UGMAW process is significantly lower than that with GMAW process due to external preheating of the filler wire in UGMAW process which results in greater contribution of arc energy by resistive heating and as a consequence, significant drop in the main welding current values in case of UGMAW process is observed.
           </p>
-          <p className="mb-4 text-gray-700 leading-relaxed">
+          {/* <p className="mb-4 text-gray-700 leading-relaxed">
           Mathematical models developed show that dilution increases with increase in wire feed rate, open circuit voltage and welding speed, whereas it decreases with increase in nozzle-to-plate distance and preheat current.
-          </p>
+          </p> */}
           <p className="mb-4 text-gray-700 leading-relaxed">
           Furthermore the optimization capabilities in design-expert software were used to numerically optimize the input parameters and the optimal solutions generated indicate that for same levels of dilution, higher deposition rates were achieved in UGMAW process thus establishing that UGMAW process can prove to be a good choice for low cost surfacing applications.
           </p>
