@@ -17,7 +17,7 @@ const Fac2Updated = () => {
             className="w-full h-full object-cover opacity-20 filter grayscale"
             alt="Background"
           />
-          <div className="absolute inset-0 bg-red-500 opacity-20"></div>
+          <div className="absolute inset-0 bg-blue-500 opacity-20"></div>
         </div>
 
         <div className="relative text-center my-24">
