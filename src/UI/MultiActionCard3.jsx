@@ -31,7 +31,7 @@ export default function MultiActionAreaCard3() {
             alt="Dedicated Workshops"
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5" component="div" sx={{ fontWeight: 'bold' }}>
               Dedicated Workshops
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>

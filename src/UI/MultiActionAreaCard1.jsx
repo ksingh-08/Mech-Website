@@ -31,11 +31,11 @@ export default function MultiActionAreaCard1() {
             alt="Inhouse Training"
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography gutterBottom variant="h5" component="div" sx={{ fontWeight: 'bold' }}>
               Inhouse Training
             </Typography>
-            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              We provide comprehensive in-house training programs for individuals and organizations looking to enhance their welding skills and knowledge...
+            <Typography variant="body2" sx={{ color: 'text.secondary'}}>
+              We provide comprehensive in-house training programs for individuals and organizations looking to enhance their welding skills and knowledge.
             </Typography>
           </CardContent>
         </CardActionArea>

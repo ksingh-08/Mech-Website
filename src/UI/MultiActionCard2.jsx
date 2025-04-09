@@ -31,7 +31,7 @@ export default function MultiActionAreaCard2() {
             alt="Industrial Consultancy"
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5" component="div" sx={{ fontWeight: 'bold' }}>
               Industrial Consultancy
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
