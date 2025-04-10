@@ -4,11 +4,10 @@ import next_icon from '../../assets/next-icon.png'
 import back_icon from '../../assets/back-icon.png'
  
 import user2 from '../../assets/user-2.png'
-import user3 from '../../assets/user-3.png'
 import Abhinav from '../../assets/Abhinav.jpg'
 import chandan from '../../assets/chandan.jpeg'
 import Devika from '../../assets/Devika.jpeg'
-import Shaily from '../../assets/shaily.jpg'
+import shaily from '../../assets/shaily.jpg'
 
 const Testimonials = () => {
     const slider= useRef();
@@ -66,7 +65,7 @@ const Testimonials = () => {
       <li>
          <div className="slide">
             <div className="user-info">
-              <img src={Shaily} alt="" />
+              <img src={shaily} alt="" />
                 <div>
                 <h3>Shaily Chaturvedi</h3>
                 <span>Lnmiit</span>
