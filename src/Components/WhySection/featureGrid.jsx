@@ -7,7 +7,7 @@ const features = [
   { title: "Industry-Aligned Curriculum", description: "Industry experts collaborate with us to shape a curriculum that equips students with relevant competencies and skills for the real world.", Icon: <FaIndustry /> },
   { title: "Cultivating Entrepreneurship", description: "We nurture an entrepreneurial mindset, empowering students to launch successful start-ups and innovate in various industries.", Icon: <FaRocket /> },
   { title: "Research Culture", description: "At LNMIIT, a thriving research ecosystem fosters excellence, encouraging students to explore new frontiers and drive impactful breakthroughs.", Icon: <FaFlask /> },
-  { title: "Distinguished Faculty and researchers", description: "Highly skilled individuals proficient in modern technologies.", Icon: < FaTools  /> },
+  { title: "Distinguished Faculty and researchers", description: "Highly skilled individuals proficient in modern technologies. Ready to assist and implement their knowledge to further use.", Icon: < FaTools  /> },
   { title: "Real World Oriented Projects", description: "Practical exposure through real-world projects that bridge the gap between theoretical knowledge and hands-on industry experience.", Icon: <FaTools /> },
 ];
 
