@@ -8,6 +8,7 @@ import user3 from '../../assets/user-3.png'
 import Abhinav from '../../assets/Abhinav.jpg'
 import chandan from '../../assets/chandan.jpeg'
 import Devika from '../../assets/Devika.jpeg'
+import Shaily from '../../assets/Shaily.jpg'
 
 const Testimonials = () => {
     const slider= useRef();
@@ -65,14 +66,14 @@ const Testimonials = () => {
       <li>
          <div className="slide">
             <div className="user-info">
-            <img src="https://via.placeholder.com/150" alt="Shaily Chaturvedi" />
+            <img src={Shaily}alt="Shaily Chaturvedi" />
             <div>
                 <h3>Shaily Chaturvedi</h3>
                 <span>Lnmiit</span>
             </div>
             </div>
             <p>
-            As a student of the Mechanical Engineering department, having access to facilities like robotic arm welding, advanced SAW setups, and real-time thermal monitoring has transformed my academic experience. These tools not only deepened my understanding of core welding processes but also gave me a clear picture of how research connects with real-world industry needs. It’s been incredibly empowering.
+            As a student of the Mechanical Engineering department, having access to facilities like robotic arm welding, advanced SAW setups, and many more has transformed my academic experience. These tools not only deepened my understanding of core welding processes but also gave me a clear picture of how research connects with real-world industry needs. It’s been incredibly empowering.
             </p>
          </div>
      </li>
