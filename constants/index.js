@@ -121,62 +121,48 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Why Welding Research Matters",
+    title: "Why Welding Research at LNMIIT?",
     icon: welding,
     iconBg: "white",
     points: [
-      "<strong>Welding is the backbone</strong> of modern infrastructure—powering sectors like <strong>aerospace, shipbuilding, railways, and defense</strong>. At <strong>LNMIIT</strong>, our research ensures <strong>structural integrity, improved efficiency</strong>, and <strong>cutting-edge innovations</strong> to meet the growing industrial demands of the 21st century."
+      "Welding is critical to sectors that demand <strong>durability, reliability, and precision</strong>. At LNMIIT, our research is geared toward supporting applications where <strong>structural integrity and process consistency</strong> are non-negotiable.",
+      "Our goal is to deliver insights and solutions that contribute to <strong>safer, stronger, and more efficient fabrication techniques</strong>—especially in demanding operational environments.",
     ],
   },
   {
-    title: "Our Research Focus Areas",
+    title: "Research & Development Focus",
     icon: research,
     iconBg: "white",
     points: [
-      "We work at the <strong>intersection of innovation and practicality</strong>, tackling real-world challenges across domains like:",
-      "<strong>Advanced Welding Techniques</strong>: Friction Stir Welding, Laser Welding, Hybrid Welding.",
-      "<strong>AI-Powered Welding Automation</strong> for unmatched <strong>precision and productivity</strong>.",
-      "<strong>Failure Analysis & Material Testing</strong> to ensure safety in high-stakes applications.",
-      "<strong>Thermal Modelling & Simulation</strong> for predicting weld behavior and optimizing processes.",
+      "Our welding research is grounded in a blend of <strong>experimental validation</strong> and <strong>process optimization</strong>, aimed at improving the performance and reliability of welded components.",
+      "We explore how <strong>welding parameters affect material behavior</strong>—including dilution, microstructure, and joint strength—especially in stainless steels, aluminum alloys, and low-carbon steels.",
+      "Our studies include <strong>dissimilar metal welding</strong>, with a focus on maintaining integrity across ferritic and austenitic interfaces, a key challenge in advanced engineering systems.",
+      "We utilize <strong>statistical and analytical methods</strong> to fine-tune welding processes, ensuring optimal weld bead geometry, mechanical properties, and process efficiency.",
+      "All research is geared toward <strong>high-integrity applications</strong> in environments where performance under stress and long-term durability are critical.",
     ],
   },
   {
-    title: "Collaboration with Industry Leaders",
-    icon: industry,
-    iconBg: "white",
-    points: [
-      "We collaborate with <strong>DRDO, HAL, Indian Railways, and major Shipyards</strong> to develop <strong>next-generation welding technologies</strong>.",
-      "<strong>Outcome-driven innovation</strong> has led to the creation of <strong>stronger, lighter</strong>, and <strong>more reliable structures</strong>, enhancing safety and cost-effectiveness across sectors.",
-    ],
-  },
-  {
-    title: "World-Class Infrastructure at LNMIIT",
+    title: "Lab Infrastructure & Facilities",
     icon: facilities,
     iconBg: "white",
     points: [
-      "<strong>LNMIIT boasts state-of-the-art labs</strong> equipped with:",
-      "<strong>Robotic Welding Arms</strong>",
-      "<strong>High-Precision Laser Systems</strong>",
-      "<strong>Thermal Imaging for Real-Time Monitoring</strong>",
-      "<strong>Advanced Material Characterization Tools</strong>",
-      "Our setup supports <strong>industrial-grade testing, training, and prototyping</strong>, bridging the gap between research and real-world application.",
+      "LNMIIT's workshop is equipped for <strong>industrial-scale research and prototyping</strong>.",
+      "<strong>Welding Techniques</strong>: SAW, SMAW, GTAW, GMAW (with consumable development), Oxy-fuel welding.",
+      "<strong>Automation & Tools</strong>: 3-axis welding manipulator, robotic arm welding station, plasma arc cutting setup.",
+      "Our labs support everything from <strong>hands-on training</strong> to <strong>prototype-level validation</strong> for collaborators.",
     ],
   },
   {
-    title: "Shaping the Future of Welding",
+    title: "Collaboration Opportunities",
     icon: future,
     iconBg: "white",
     points: [
-      "We are pioneering in areas like:",
-      "<strong>Green Welding Technologies</strong> for a sustainable future",
-      "<strong>Smart Sensors</strong> for live defect detection and process control",
-      "<strong>AI & Machine Learning</strong> for predictive maintenance and quality assurance",
-      "At LNMIIT, we offer <strong>industrial consultancy, sponsored research, and hands-on training</strong>, empowering the next generation of welding innovators.",
+      "We are actively seeking to <strong>partner with organizations</strong> that rely on welding for high-integrity fabrication and precision manufacturing.",
+      "Our team offers capabilities in <strong>process development, material evaluation, and customized training modules</strong> tailored to industry needs.",
+      "Whether it's for <strong>new material weldability studies</strong>, <strong>automated welding trials</strong>, or <strong>fabrication optimization</strong>, we are equipped to contribute to mission-driven engineering challenges.",
     ],
   },
 ];
-
-
 
 const testimonials = [
   {

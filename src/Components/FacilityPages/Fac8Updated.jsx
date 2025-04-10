@@ -1,5 +1,5 @@
 import React from 'react';
-import fl8 from '../../assets/fl8.jpg';
+import fl8 from "../../assets/fl8.jpg";
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -31,7 +31,7 @@ const Fac8Updated = () => {
       {/* Image Section */}
       <div className="relative flex justify-center -mt-20 z-0">
         <img
-          src={fl8} // ✅ Fixed: Use the imported image
+          src={fl8} 
           className="h-80 border-4 border-gray-700 shadow-xl rounded-lg"
           alt="Welding Consumables"
         />
