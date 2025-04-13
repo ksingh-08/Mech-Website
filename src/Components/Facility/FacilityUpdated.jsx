@@ -367,12 +367,12 @@ const FacilityPage = () => {
       <div className="container mx-auto mt-5 px-4 py-10 max-w-7xl">
         <div className="text-center mb-16">
           <h1
-            className="text-center  mt-20 mb-1 text-4xl font-bold text-red-900"
+            className="text-center  mt-20 mb-10 text-4xl font-bold text-red-900"
             style={{ color: "#212EA0" }}
           >
             WELDING RESEARCH LABORATORY{" "}
           </h1>
-          <div className="h-1 w-60 bg-red-600 mx-auto rounded-full mb-8"></div>
+          {/* <div className="h-1 w-60 bg-red-600 mx-auto rounded-full mb-8"></div> */}
           <div className="max-w-6xl mx-auto mb-12 bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100">
             <p className="text-xl leading-relaxed">
               At <span className="text-red-700 font-bold">LNMIIT</span>, our
@@ -497,6 +497,7 @@ const FacilityPage = () => {
                     />
                   </svg>
                 </button>
+                
               </div>
             </div>
           </div>
