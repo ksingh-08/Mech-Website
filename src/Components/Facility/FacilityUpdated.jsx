@@ -502,7 +502,7 @@ const FacilityPage = () => {
             </div>
           </div>
           {/* Featured Facility with Fade Effect */}
-          <div
+          {/* <div
             className={`grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto bg-gray-50 p-8 rounded-xl shadow-md `}
           >
             <div className={`transition-opacity duration-500 ${fadeState}`}>
@@ -528,8 +528,44 @@ const FacilityPage = () => {
                 className="w-full h-80 object-cover"
               />
             </div>
-          </div>
-        </div>
+          </div> */}
+           {/* {
+    id: 1,
+    image: slideImageSMAW,
+    link: "/facility1",
+    title: "SMAW",
+    description:
+      "Shielded Metal Arc Welding, a manual arc welding process using a consumable electrode.",
+  } */}
+ {FACILITIES.map((facility) => (
+  <div
+    key={facility.id}
+    className="grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto bg-gray-50 p-8 rounded-xl shadow-md mb-10"
+  >
+    {/* Left Side: Text Content */}
+    <div>
+      <h2 className="text-3xl font-bold mb-4 text-red-700">{facility.title}</h2>
+      <p className="text-lg mb-6 leading-relaxed">{facility.description}</p>
+      <Link
+        to={facility.link}
+        className="inline-block px-6 py-3 bg-red-700 hover:bg-red-600 text-white rounded-lg shadow-md transition-all duration-300"
+      >
+        Learn More
+      </Link>
+    </div>
+
+    {/* Right Side: Image */}
+    <div>
+      <img
+        src={facility.image}
+        alt={`${facility.title} Equipment`}
+        className="w-full h-80 object-cover rounded-lg"
+      />
+    </div>
+  </div>
+))}
+
+</div>
 
         {/* CTA */}
         <div className="text-center mt-16 max-w-6xl mx-auto bg-gray-50 rounded-xl p-8 shadow-sm">
