@@ -4,7 +4,7 @@ import React from 'react'
 import Hero from './Components/Hero/Hero'
 import Contact from './Components/Contact/Contact'
 import About from './Components/About/About'
-import { BrowserRouter,Routes,Route } from 'react-router-dom';// line 1 added
+import { BrowserRouter, Routes, Route } from 'react-router-dom';// line 1 added
 import Footer from './Components/Footer/Footer'
 import Wonder from './Components/Wonders/Wonder'
 import Research from './Components/Research/Research'
@@ -31,8 +31,8 @@ import './index.css';
 import EPage1 from './Components/ExtendedPages/Epage1'
 import EPage2 from './Components/ExtendedPages/Epage2'
 import EPage3 from './Components/ExtendedPages/Epage3'
+import FacilityUpdated from './Components/Facility/FacilityUpdated';
 import ScrollToTopLayout from './Components/ScrollTo/ScrollToTopLayout';
-import FacilityUpdated from './Components/Facility/FacilityUpated'
 import NavbarUpdated from './Components/Navbar/NavbarUpdated'
 import Fac1Updated from './Components/FacilityPages/Fac1Updated'
 import Fac2Updated from './Components/FacilityPages/Fac2Updated'
@@ -50,7 +50,6 @@ import Fac9Updated from './Components/FacilityPages/Fac9Updated';
 
 const App = () => {
   return (
-    <BrowserRouter> 
     <div>
          
    
@@ -91,7 +90,6 @@ const App = () => {
       <Footer/>
       
     </div>
-    </BrowserRouter>
   )
 }
 
