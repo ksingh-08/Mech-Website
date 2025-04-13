@@ -41,7 +41,7 @@ const Fac10Updated = () => {
       <div className="px-6 md:px-12 lg:px-24 my-8">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Overview of ASAW Process</h2>
         <p className="text-gray-700 leading-relaxed">
-          The **Advanced Submerged Arc Welding (ASAW)** process is a specialized variant of submerged arc welding (SAW), developed at IIT Delhi. 
+          The Advanced Submerged Arc Welding (ASAW) process is a specialized variant of submerged arc welding (SAW), developed at IIT Delhi. 
           It features a unique welding torch design with two contact tips (upper and lower) separated by a dielectric medium. Additionally, 
           the process uses an auxiliary secondary power source to preheat the welding wire using Joule heating. This two-step current supply 
           method optimizes the welding process, offering better control over heat input and metal deposition.
@@ -133,13 +133,13 @@ const Fac10Updated = () => {
             </table>
 
             <p className="text-gray-700 mt-4">
-              **Total Power Consumed by ASAW:** 16 KW (main) + 0.48 KW (auxiliary) + 0.02 KW (water pump) = 16.5 KW
+              Total Power Consumed by ASAW: 16 KW (main) + 0.48 KW (auxiliary) + 0.02 KW (water pump) = 16.5 KW
             </p>
             <p className="text-gray-700 mt-4">
-              **Power Saved by ASAW:** 24 KW (SAW) - 16.5 KW (ASAW) = 7.5 KW
+              Power Saved by ASAW: 24 KW (SAW) - 16.5 KW (ASAW) = 7.5 KW
             </p>
             <p className="text-gray-700 mt-4">
-              This demonstrates that ASAW is **31% more efficient than SAW** for the same welding conditions, highlighting its economic advantages.
+              This demonstrates that ASAW is 31% more efficient than SAW for the same welding conditions, highlighting its economic advantages.
             </p>
           </AccordionDetails>
         </Accordion>
