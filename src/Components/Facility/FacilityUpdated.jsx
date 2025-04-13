@@ -257,6 +257,7 @@ import slideImagePlasma from '../../newpics/Plasma.jpeg';
 import slideImageConsumable from '../../assets/fl8.jpg';
 import slideImageAxis from '../../newpics/3axis.jpeg';
 import slideImageAsaw from '../../assets/Asaw.jpg';
+import {motion} from "framer-motion";
 
 const FACILITIES = [
   {
@@ -537,9 +538,13 @@ const FacilityPage = () => {
     description:
       "Shielded Metal Arc Welding, a manual arc welding process using a consumable electrode.",
   } */}
- {FACILITIES.map((facility) => (
-  <div
+ {FACILITIES.map((facility, index) => (
+  <motion.div
     key={facility.id}
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: index * 0.1 }}
+    viewport={{ once: true, amount: 0.3 }}
     className="grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto bg-gray-50 p-8 rounded-xl shadow-md mb-10"
   >
     {/* Left Side: Text Content */}
@@ -562,7 +567,7 @@ const FacilityPage = () => {
         className="w-full h-80 object-cover rounded-lg"
       />
     </div>
-  </div>
+  </motion.div>
 ))}
 
 </div>
