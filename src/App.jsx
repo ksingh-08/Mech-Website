@@ -42,6 +42,7 @@ import Fac5Updated from './Components/FacilityPages/Fac5Updated'
 import Fac6Updated from './Components/FacilityPages/Fac6Updated'
 import Fac7Updated from './Components/FacilityPages/Fac7Updated'
 import Fac8Updated from './Components/FacilityPages/Fac8Updated'
+import Fac10Updated from './Components/FacilityPages/Fac10Updated';
 import Scope from './Components/Scope/Scope'
 import FacUpdate from './Components/Facility/InfiniteMenu';
 import ResearchUpdate from './Components/Research/ResearchUpdate';
@@ -80,6 +81,7 @@ const App = () => {
            <Route path="/facility7" element={<ScrollToTopLayout><Fac7Updated/></ScrollToTopLayout>} />
            <Route path="/facility8" element={<ScrollToTopLayout><Fac8Updated/></ScrollToTopLayout>} />
            <Route path="/facility9" element={<ScrollToTopLayout><Fac9Updated/></ScrollToTopLayout>} />
+           <Route path="/facility10" element={<ScrollToTopLayout><Fac10Updated/></ScrollToTopLayout>} />
            <Route path="/admission" element={<ScrollToTopLayout><Admission/></ScrollToTopLayout>} />
            <Route path="/career" element={<ScrollToTopLayout><Career/></ScrollToTopLayout>} />
            <Route path="/industry-consultancy" element={<ScrollToTopLayout><EPage1/></ScrollToTopLayout>} />

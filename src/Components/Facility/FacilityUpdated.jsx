@@ -261,6 +261,7 @@ import slideImageRobotic from '../../newpics/Robotic.jpeg';
 import slideImagePlasma from '../../newpics/Plasma.jpeg';
 import slideImageConsumable from '../../assets/fl8.jpg';
 import slideImageAxis from '../../newpics/3axis.jpeg';
+import slideImageAsaw from '../../assets/Asaw.jpg';
 
 const FACILITIES = [
   {
@@ -325,6 +326,13 @@ const FACILITIES = [
     link: "/facility9",
     title: "3-Axis Welding Manipulator",
     description: "Precision system enabling programmed movement in three dimensions for consistent welding."
+  },
+  {
+    id: 10,
+    image: slideImageAsaw,
+    link: "/facility10",
+    title: "Advanced Submerged Arc Welding",
+    description: "Innovative submerged arc welding process with enhanced control and efficiency."
   }
 ];
 
