@@ -1,15 +1,15 @@
 import React from "react";
-
+import hpvc from "../../assets/robofest.jpg"
 const achievements = [
   {
-    title: "Lorem Ipsum Dolor",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/85/GSoC-icon.svg",
+    title: "Electric Human Powered Vehicle Challenge",
+    description: "ASME X SAE LNMIIT’s eHPVC team is designing a hybrid eco-vehicle powered by electricity and human effort. Focused on innovation and sustainability, the project highlights LNMIIT’s drive for technical excellence and teamwork.",
+    image: "https://www.competitionsciences.org/wp-content/uploads/2017/07/download.png",
   },
   {
-    title: "Consectetur Adipiscing",
-    description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: "https://icpc.global/regionals/abouticpc/foundationlogo.png",
+    title: "Robofest 4.0",
+    description: "A five-member LNMIIT team, won ₹2.5 Lakhs and advanced to the grand finale at Robofest Gujarat 4.0 for their PoC Rover project.",
+    image:hpvc,
   },
   {
     title: "Sed Do Eiusmod",
