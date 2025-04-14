@@ -369,7 +369,7 @@ const FacilityPage = () => {
         <div className="text-center mb-16">
           <h1
             className="text-center  mt-20 mb-10 text-4xl font-bold text-red-900"
-            style={{ color: "#212EA0" }}
+            style={{ color: "#000F38" }}
           >
             WELDING RESEARCH LABORATORY{" "}
           </h1>

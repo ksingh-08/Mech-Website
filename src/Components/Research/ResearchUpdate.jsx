@@ -47,6 +47,15 @@ const ResearchUpdate = () => {
   return (
     <div className="pt-3 px-4">
       <Title subTitle="Research" title="Explore. Discover. Innovate." />
+      <div className="max-w-6xl mx-auto mb-12 bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100">
+      <p className="text-xl leading-relaxed">
+  <span className="text-red-700 font-bold">Welding Research at LNMIIT</span>
+  — Pioneering innovation in advanced welding technologies through interdisciplinary research and industry collaboration. We focus on developing 
+  <span className="text-red-700 font-bold"> sustainable, efficient, and precision welding solutions </span>
+  for next-generation manufacturing challenges across multiple engineering domains.
+</p>
+
+          </div>
 
       {researchItems.map((item, index) => (
         <div className="mb-6" key={index}>
