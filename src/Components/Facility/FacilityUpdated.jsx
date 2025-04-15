@@ -232,7 +232,7 @@
 // export default FacilityUpdated;
 
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -344,6 +344,8 @@ const FacilityPage = () => {
   const [activeFacility, setActiveFacility] = useState(FACILITIES[0]);
   const [fadeState, setFadeState] = useState("fade-in");
   const [autoRotateIndex, setAutoRotateIndex] = useState(0);
+  const navigate = useNavigate();
+
 
   // Auto rotate featured facility with fade effect
   useEffect(() => {
@@ -436,10 +438,15 @@ const FacilityPage = () => {
                       setTimeout(() => {
                         setActiveFacility(facility);
                         setFadeState("fade-in");
-                      }, 500);
+                    
+                        const el = document.getElementById(`facility-${facility.id}`);
+                        if (el) {
+                          el.scrollIntoView({ behavior: "smooth", block: "start" });
+                        }
+                      },100);
                     }}
                   >
-                     <Link to={facility.link} className="block w-full h-full">
+                     
                     <div className="cursor-pointer transition-all duration-300 hover:shadow-xl group">
                       <div className="relative h-56 overflow-hidden">
                         <img
@@ -458,7 +465,7 @@ const FacilityPage = () => {
                         </div>
                       </div>
                     </div>
-                    </Link>
+                   
                   </SwiperSlide>
                 ))}
               </Swiper>
@@ -538,37 +545,43 @@ const FacilityPage = () => {
     description:
       "Shielded Metal Arc Welding, a manual arc welding process using a consumable electrode.",
   } */}
- {FACILITIES.map((facility, index) => (
+{FACILITIES.map((facility, index) => (
   <motion.div
     key={facility.id}
-    initial={{ opacity: 0, y: 50 }}
+    initial={{ opacity: 0, y: 25 }}
     whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6, delay: index * 0.1 }}
+    transition={{ duration: 0.5, delay: index * 0.005 }}
     viewport={{ once: true, amount: 0.3 }}
-    className="grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto bg-gray-50 p-8 rounded-xl shadow-md mb-10"
+    className="max-w-6xl mx-auto bg-gray-50 p-8 rounded-xl shadow-md mb-10"
   >
-    {/* Left Side: Text Content */}
-    <div>
-      <h2 className="text-3xl font-bold mb-4 text-red-700">{facility.title}</h2>
-      <p className="text-lg mb-6 leading-relaxed">{facility.description}</p>
-      <Link
-        to={facility.link}
-        className="inline-block px-6 py-3 bg-red-700 hover:bg-red-600 text-white rounded-lg shadow-md transition-all duration-300"
-      >
-        Learn More
-      </Link>
-    </div>
+    <div id={`facility-${facility.id}`} className={`flex flex-col md:flex-row ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''} items-center gap-8`}>
+      {/* Text Content */}
+      <div className="md:w-1/2">
+        <div className="flex items-center gap-3 mb-2">
+          <span className="text-3xl font-bold text-blue-800">#{index + 1}</span>
+          <h2 className="text-3xl font-bold text-red-700">{facility.title}</h2>
+        </div>
+        <p className="text-lg mb-6 leading-relaxed">{facility.description}</p>
+        <Link
+          to={facility.link}
+          className="inline-block px-6 py-3 bg-red-700 hover:bg-red-600 text-white rounded-lg shadow-md transition-all duration-300"
+        >
+          Learn More
+        </Link>
+      </div>
 
-    {/* Right Side: Image */}
-    <div>
-      <img
-        src={facility.image}
-        alt={`${facility.title} Equipment`}
-        className="w-full h-80 object-cover rounded-lg"
-      />
+      {/* Image */}
+      <div className="md:w-1/2">
+        <img
+          src={facility.image}
+          alt={`${facility.title} Equipment`}
+          className="w-full h-80 object-cover rounded-lg"
+        />
+      </div>
     </div>
   </motion.div>
 ))}
+
 
 </div>
 
