@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react'
 // import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
@@ -47,7 +46,8 @@ import Scope from './Components/Scope/Scope'
 import FacUpdate from './Components/Facility/InfiniteMenu';
 import ResearchUpdate from './Components/Research/ResearchUpdate';
 import Fac9Updated from './Components/FacilityPages/Fac9Updated';
-
+import Blog from './Components/Blog/Blog';
+import AdminDashboard from './Components/Admin/AdminDashboard';
 
 const App = () => {
   return (
@@ -88,6 +88,8 @@ const App = () => {
            <Route path="/training" element={<ScrollToTopLayout><EPage2/></ScrollToTopLayout>} />
            <Route path="/workshop" element={<ScrollToTopLayout><EPage3/></ScrollToTopLayout>} />
            <Route path="/Scope" element={<ScrollToTopLayout><Scope /></ScrollToTopLayout>} />
+           <Route path="/blog" element={<ScrollToTopLayout><Blog /></ScrollToTopLayout>} />
+           <Route path="/admin" element={<ScrollToTopLayout><AdminDashboard /></ScrollToTopLayout>} />
            </Routes>
       <Footer/>
       
