@@ -72,4 +72,30 @@ router.delete('/reject/:id', auth, async (req, res) => {
   }
 });
 
+// Remove an approved blog post (admin only)
+router.delete('/remove/:id', auth, async (req, res) => {
+  try {
+    const result = await Blog.findByIdAndDelete(req.params.id);
+    if (!result) {
+      return res.status(404).json({ message: 'Post not found' });
+    }
+    res.json({ message: 'Post removed successfully' });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
+// Get a single blog post by ID
+router.get('/posts/:id', async (req, res) => {
+  try {
+    const post = await Blog.findById(req.params.id);
+    if (!post) {
+      return res.status(404).json({ message: 'Post not found' });
+    }
+    res.json(post);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
 module.exports = router; 

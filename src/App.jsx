@@ -47,7 +47,10 @@ import FacUpdate from './Components/Facility/InfiniteMenu';
 import ResearchUpdate from './Components/Research/ResearchUpdate';
 import Fac9Updated from './Components/FacilityPages/Fac9Updated';
 import Blog from './Components/Blog/Blog';
+import SubmitPost from './Components/Blog/SubmitPost';
+import BlogPost from './Components/Blog/BlogPost';
 import AdminDashboard from './Components/Admin/AdminDashboard';
+import AdminBlogPost from './Components/Admin/AdminBlogPost';
 
 const App = () => {
   return (
@@ -89,7 +92,10 @@ const App = () => {
            <Route path="/workshop" element={<ScrollToTopLayout><EPage3/></ScrollToTopLayout>} />
            <Route path="/Scope" element={<ScrollToTopLayout><Scope /></ScrollToTopLayout>} />
            <Route path="/blog" element={<ScrollToTopLayout><Blog /></ScrollToTopLayout>} />
+           <Route path="/blog/submit" element={<ScrollToTopLayout><SubmitPost /></ScrollToTopLayout>} />
+           <Route path="/blog/:id" element={<ScrollToTopLayout><BlogPost /></ScrollToTopLayout>} />
            <Route path="/admin" element={<ScrollToTopLayout><AdminDashboard /></ScrollToTopLayout>} />
+           <Route path="/admin/blog/:id" element={<ScrollToTopLayout><AdminBlogPost /></ScrollToTopLayout>} />
            </Routes>
       <Footer/>
       
