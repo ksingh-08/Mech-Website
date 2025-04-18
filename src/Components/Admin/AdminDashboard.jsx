@@ -10,7 +10,7 @@ const AdminDashboard = () => {
     password: ''
   });
   const navigate = useNavigate();
-
+const backend = "https://mech-website-ankur.onrender.com"
   // Calculate reading time based on content length
   const calculateReadTime = (content) => {
     const wordsPerMinute = 200; // Average reading speed
@@ -31,7 +31,7 @@ const AdminDashboard = () => {
 
   const fetchPendingPosts = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/blog/pending', {
+      const response = await fetch(`${backend}/api/blog/pending`, {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('adminToken')}`
         }
@@ -45,7 +45,7 @@ const AdminDashboard = () => {
 
   const fetchApprovedPosts = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/blog/posts', {
+      const response = await fetch(`${backend}/api/blog/posts`, {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('adminToken')}`
         }
@@ -60,7 +60,7 @@ const AdminDashboard = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/admin/login', {
+      const response = await fetch(`${backend}/api/admin/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -84,7 +84,7 @@ const AdminDashboard = () => {
 
   const handleApprove = async (postId) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/blog/approve/${postId}`, {
+      const response = await fetch(`${backend}/api/blog/approve/${postId}`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('adminToken')}`
@@ -101,7 +101,7 @@ const AdminDashboard = () => {
 
   const handleReject = async (postId) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/blog/reject/${postId}`, {
+      const response = await fetch(`${backend}/api/blog/reject/${postId}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('adminToken')}`
@@ -118,7 +118,7 @@ const AdminDashboard = () => {
 
   const handleRemove = async (postId) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/blog/remove/${postId}`, {
+      const response = await fetch(`${backend}/api/blog/remove/${postId}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('adminToken')}`

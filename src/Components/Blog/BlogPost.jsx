@@ -10,10 +10,10 @@ const BlogPost = () => {
   useEffect(() => {
     fetchBlogPost();
   }, [id]);
-
+const backend = "https://mech-website-ankur.onrender.com"
   const fetchBlogPost = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/blog/posts/${id}`);
+      const response = await fetch(`${backend}/api/blog/posts/${id}`);
       if (response.ok) {
         const data = await response.json();
         setPost(data);

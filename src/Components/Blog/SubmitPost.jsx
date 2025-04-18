@@ -9,11 +9,11 @@ const SubmitPost = () => {
     email: ''
   });
   const navigate = useNavigate();
-
+const backend = "https://mech-website-ankur.onrender.com"
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/blog/submit', {
+      const response = await fetch(`${backend}/api/blog/submit`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

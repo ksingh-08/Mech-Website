@@ -10,7 +10,7 @@ const AdminBlogPost = () => {
   useEffect(() => {
     fetchBlogPost();
   }, [id]);
-
+const backend = "https://mech-website-ankur.onrender.com"
   const fetchBlogPost = async () => {
     try {
       const token = localStorage.getItem('adminToken');
@@ -19,7 +19,7 @@ const AdminBlogPost = () => {
         return;
       }
 
-      const response = await fetch(`http://localhost:5000/api/blog/posts/${id}`, {
+      const response = await fetch(`${backend}/api/blog/posts/${id}`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -41,7 +41,7 @@ const AdminBlogPost = () => {
 
   const handleApprove = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/blog/approve/${id}`, {
+      const response = await fetch(`${backend}/api/blog/approve/${id}`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('adminToken')}`
@@ -58,7 +58,7 @@ const AdminBlogPost = () => {
 
   const handleReject = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/blog/reject/${id}`, {
+      const response = await fetch(`${backend}/api/blog/reject/${id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('adminToken')}`
@@ -75,7 +75,7 @@ const AdminBlogPost = () => {
 
   const handleRemove = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/blog/remove/${id}`, {
+      const response = await fetch(`${backend}/api/blog/remove/${id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('adminToken')}`

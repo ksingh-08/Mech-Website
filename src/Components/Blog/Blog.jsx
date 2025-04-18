@@ -24,10 +24,10 @@ const Blog = () => {
     // Fetch approved blog posts from backend
     fetchBlogPosts();
   }, []);
-
+const backend = "https://mech-website-ankur.onrender.com"
   const fetchBlogPosts = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/blog/posts');
+      const response = await fetch(`${backend}/api/blog/posts`);
       const data = await response.json();
       setPosts(data);
     } catch (error) {
@@ -38,7 +38,7 @@ const Blog = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/blog/submit', {
+      const response = await fetch(`${backend}/api/blog/submit`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
