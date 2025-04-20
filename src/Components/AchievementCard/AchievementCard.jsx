@@ -12,27 +12,12 @@ const achievements = [
     image:hpvc,
   },
   {
-    title: "Sed Do Eiusmod",
+    title: "ASME LNMIIT Student Section",
     description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    image: "https://cdn.dribbble.com/userupload/9964326/file/still-963bb3814dd11f45ad91d707e91bc8c4.png",
+      "The ASME LNMIIT Student Section has been honoured with the ASME Student Section Recognition Program’s Outstanding Community Engagement Award for India.",
+    image: "https://lnmiit.ac.in/wp-content/uploads/2024/07/unnamed.png",
   },
-  {
-    title: "Tempor Incididunt",
-    description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/85/GSoC-icon.svg",
-  },
-  {
-    title: "Reprehenderit Voluptate",
-    description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-    image: "https://icpc.global/regionals/abouticpc/foundationlogo.png",
-  },
-  {
-    title: "Cillum Dolore Eu Fugiat",
-    description:
-      "Ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-    image: "https://cdn.dribbble.com/userupload/9964326/file/still-963bb3814dd11f45ad91d707e91bc8c4.png",
-  },
+ 
 ];
 
 const AchievementCard = ({ title, description, image }) => {
