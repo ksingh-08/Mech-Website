@@ -15,7 +15,7 @@ const Research = () => {
 
   return (
     
-    <div className="outerres">
+    <div className="outerres ">
       
      <Title subTitle='Research' title='Explore. Discover. Innovate.'/>
      

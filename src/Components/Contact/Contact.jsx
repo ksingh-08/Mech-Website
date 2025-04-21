@@ -50,7 +50,7 @@ const Contact = () => {
   return (
     <>
      
-    <div className="allcontainer">
+    <div className="allcontainer mt-10">
     <div className="contact-up">
      <Title subTitle='Contact Us' title='Get in Touch'/>
      </div>
