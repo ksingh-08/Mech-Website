@@ -45,7 +45,7 @@ const ResearchUpdate = () => {
   ];
 
   return (
-    <div className="pt-3 px-4">
+    <div className="pt-3 px-4 mt-10">
       <Title subTitle="Research" title="Explore. Discover. Innovate." />
       <div className="max-w-6xl mx-auto mb-12 bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100">
       <p className="text-xl leading-relaxed">
