@@ -33,7 +33,7 @@
 
 
 import React from 'react';
-import provide2 from '../../assets/inhouse.jpg'
+import provide2 from '../../assets/Inhouse.jpg'
 import mttdPdf from '../../assets/cif/MTTD.pdf';
 
 const Epage2 = () => {
