@@ -32,7 +32,7 @@
 
 // export default Epage3;
 import React from 'react';
-import provide3 from '../../assets/Inhouse.jpg';
+import provide3 from '../../assets/Workshop.jpg';
 import { useNavigate } from 'react-router-dom';
 
 const Epage3 = () => {
