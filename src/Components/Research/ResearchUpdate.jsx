@@ -44,19 +44,97 @@ const ResearchUpdate = () => {
     },
   ];
 
+  // Group patent processes by type
+  const patentProcesses = {
+    'Plasma Enhanced Processes': [
+      'Plasma Enhanced Shielded Metal Arc Welding (PESMAW)',
+      'Plasma Enhanced Oxygen Arc Cutting (PEOAC)',
+      'Plasma Enhanced Oxygen Arc Piercing (PEOAP)',
+      'Plasma Enhanced Oxygen Arc Lancing (PEOAL)',
+      'Plasma Enhanced Oxygen Arc Gouging (PEOAG)',
+      'Plasma Enhanced Shielded Metal Arc Surfacing (PESMAS)',
+      'Plasma Enhanced Oxygen Arc Scarfing (PEOAS)',
+    ],
+    'Advanced Welding Techniques': [
+      'Universal Shielded Metal Arc Welding (USMAW)',
+      'Advanced Submerged Arc Welding (ASAW)',
+      'Advanced Gas Metal Arc Welding (AGMAW)',
+      'Moving Contact Shielded Metal Arc Welding (MCSMAW)',
+    ],
+    'Design Innovations': [
+      'Design of Underwater welding electrodes',
+      'Welding of cross-country pipe lines with E-6013 and E-7018 electrodes',
+      'Design of welding fluxes',
+      'Design of \'Spin Welding Machine\' for welding of polymers',
+    ],
+  };
+
   return (
-    <div className="pt-3 px-4 mt-10">
+    <div className="pt-3 px-4 mt-10 bg-gray-50 pb-12">
       <Title subTitle="Research" title="Explore. Discover. Innovate." />
-      <div className="max-w-6xl mx-auto mb-12 bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100">
-      <p className="text-xl leading-relaxed">
-  <span className="text-red-700 font-bold">Welding Research at LNMIIT</span>
-  — Pioneering innovation in advanced welding technologies through interdisciplinary research and industry collaboration. We focus on developing 
-  <span className="text-red-700 font-bold"> sustainable, efficient, and precision welding solutions </span>
-  for next-generation manufacturing challenges across multiple engineering domains.
-</p>
+      
+      {/* Introduction Section */}
+      <div className="max-w-6xl mx-auto mb-12 bg-white p-8 rounded-xl shadow-md border border-gray-100">
+        <p className="text-xl leading-relaxed">
+          <span className="text-red-700 font-bold">Welding Research at LNMIIT</span>
+          — Pioneering innovation in advanced welding technologies through interdisciplinary research and industry collaboration. We focus on developing 
+          <span className="text-red-700 font-bold"> sustainable, efficient, and precision welding solutions </span>
+          for next-generation manufacturing challenges across multiple engineering domains.
+        </p>
+      </div>
 
+      {/* Patents & Innovations Section */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="max-w-6xl mx-auto mb-16"
+      >
+        <div className="relative bg-white rounded-xl shadow-lg p-8 border border-gray-100 overflow-hidden">
+          <div className="absolute top-0 right-0 w-40 h-40 bg-red-700 opacity-5 rounded-full transform translate-x-16 -translate-y-16"></div>
+          <div className="absolute bottom-0 left-0 w-60 h-60 bg-red-700 opacity-5 rounded-full transform -translate-x-24 translate-y-24"></div>
+          
+          <h2 className="text-2xl font-bold mb-6 text-gray-800 relative">
+            <span className="border-b-4 border-red-700 pb-1">Patented Innovations</span>
+          </h2>
+          
+          <p className="text-lg mb-8">
+            Our research team has developed and protected several innovative welding processes through patents, design registrations, and publications:
+          </p>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {Object.entries(patentProcesses).map(([category, processes], idx) => (
+              <motion.div 
+                key={idx}
+                initial={{ y: 20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow duration-300"
+              >
+                <h3 className="text-lg font-semibold text-red-700 mb-4">{category}</h3>
+                <ul className="space-y-2">
+                  {processes.map((process, index) => (
+                    <li key={index} className="flex items-start">
+                      <span className="flex-shrink-0 w-6 h-6 rounded-full bg-red-700 text-white flex items-center justify-center text-sm font-medium mr-2">
+                        {index + 1}
+                      </span>
+                      <span className="text-gray-700">{process}</span>
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
           </div>
+        </div>
+      </motion.div>
 
+      {/* Research Items Section */}
+      <h2 className="text-2xl font-bold mb-8 text-center text-gray-800">
+        <span className="border-b-4 border-red-700 pb-1">Featured Research</span>
+      </h2>
+      
       {researchItems.map((item, index) => (
         <div className="mb-6" key={index}>
           <motion.div

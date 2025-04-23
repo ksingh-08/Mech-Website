@@ -22,7 +22,7 @@ const Hero = () => {
           <h1 id="highlightText">Welding Research</h1>
 
 <BlurText
-  text="Forging Innovation, Igniting Progress: Explore the Frontier of Welding Research.Uncover Cutting-Edge Techniques, Materials, and Technologies Shaping Tomorrow's Welding Industry."
+  text="Forging Innovation, Igniting Progress: Explore the Frontier of Welding Research. Uncover Cutting-Edge Techniques, Materials, and Technologies Shaping Tomorrow's Welding Industry."
   delay={100}
   animateBy="words"
   direction="top"
