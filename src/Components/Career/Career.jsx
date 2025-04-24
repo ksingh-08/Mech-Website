@@ -9,7 +9,7 @@ import car4 from '../../assets/car4.jpg'
 import car5 from '../../assets/car5.jpg'
 import car6 from '../../assets/car6.jpg'
 import car7 from '../../assets/car7.jpg'
-
+import career1 from '../../assets/career1.jpeg'
 export default function Career() {
   const careerData = [
     {
@@ -46,7 +46,7 @@ export default function Career() {
       id: 6,
       title: "Welding Instructor/Trainer",
       description: "Welding instructors teach welding techniques, safety procedures, and related skills at vocational schools, community colleges, and trade schools. They may also provide on-the-job training for apprentices and entry-level welders.",
-      image: car6
+      image: career1
     },
     // {
     //   id: 7,
