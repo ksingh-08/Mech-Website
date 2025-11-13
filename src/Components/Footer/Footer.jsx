@@ -18,7 +18,7 @@
 
 
 import React from "react"
- 
+import { useTranslation } from 'react-i18next';
 import "./Footer.css"
 
 import messg from '../../assets/msg-icon.png'
@@ -28,6 +28,7 @@ import logo from '../../assets/logo.png'
 import { Link } from "react-router-dom"
 
 const Footer = () => {
+  const { t } = useTranslation();
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -52,34 +53,34 @@ const Footer = () => {
           <div className='box '>
             <Link to="/" onClick={scrollToTop}><img src={logo} alt="" className="logon"/></Link>
            
-             <p>The LNM Institute of Information Technology</p>
+             <p>{t('footer.instituteName')}</p>
              
  
           </div>
           <div className='box  '>
-            <h3>Explore</h3>
+            <h3>{t('footer.explore')}</h3>
             <ul>
-              <li><Link to="/about">About Us</Link></li>
-              <li><Link to="/career">Careers</Link></li>
-              <li><Link to="/research">Research</Link></li>
+              <li><Link to="/about">{t('footer.aboutUs')}</Link></li>
+              <li><Link to="/career">{t('footer.careers')}</Link></li>
+              <li><Link to="/research">{t('footer.research')}</Link></li>
                
-              <li><Link to="/contact">Contact Us</Link></li>
+              <li><Link to="/contact">{t('footer.contactUs')}</Link></li>
             </ul>
           </div>
           <div className='box  '>
-            <h3>Quick Links</h3>
+            <h3>{t('footer.quickLinks')}</h3>
             <ul>
-              <li><Link to="/facility">Facilities</Link></li>
-              <li><Link to="/admission">Admission</Link></li>
+              <li><Link to="/facility">{t('footer.facilities')}</Link></li>
+              <li><Link to="/admission">{t('footer.admission')}</Link></li>
              
-              <li><Link to="/faculty">Faculty &amp; Staff</Link></li>
-              <li>Terms & Conditions</li>
+              <li><Link to="/faculty">{t('footer.facultyStaff')}</Link></li>
+              <li>{t('footer.termsConditions')}</li>
                
             </ul>
           </div>
           
           <div className='box last'>
-            <h3>Have a Questions?</h3>
+            <h3>{t('footer.haveQuestions')}</h3>
             <ul>
               <li>
                 <img src={loc} alt="" />
@@ -99,7 +100,7 @@ const Footer = () => {
       </footer>
       <div className='legal'>
         <p>
-            Copyright © 2024 LNMIIT |&nbsp; All rights reserved | Last updated on: April 9, 2025 | For web support, reach us at :
+            {t('footer.copyright')} |&nbsp; {t('footer.allRightsReserved')} | {t('footer.lastUpdated')} | {t('footer.webSupport')}
             <a  href="mailto:web.support@lnmiit.ac.in">web.support@lnmiit.ac.in</a>
         </p>
       </div>

@@ -1,0 +1,88 @@
+{
+  "about": {
+    "title": "Acerca de la Investigación en Soldadura en",
+    "paragraph1": "La tecnología de soldadura es la fuerza silenciosa detrás del crecimiento de una nación y su estatura global. Impulsa la infraestructura, fortalece los sistemas de defensa y alimenta el avance industrial, lo que la hace indispensable para cualquier país que aspire a convertirse en una potencia mundial. En LNMIIT, reconocemos esta importancia estratégica y estamos comprometidos a avanzar en las fronteras de la ciencia e ingeniería de soldadura.",
+    "paragraph2": "Nuestras Instalaciones e Investigación en Soldadura están diseñadas para cumplir con estándares de clase mundial, guiadas por expertos internacionalmente reconocidos en el campo. Desde aplicaciones militares de alta precisión hasta la construcción de plantas de energía nuclear, puentes y sistemas de fabricación de vanguardia, nuestro trabajo empodera sectores que definen la fortaleza nacional y la vitalidad económica.",
+    "paragraph3": "A medida que las industrias exigen cada vez más soluciones de soldadura automatizadas, de alto rendimiento y sostenibles, LNMIIT se encuentra a la vanguardia, cerrando la brecha entre la academia y la industria. Ofrecemos un ecosistema robusto que nutre ingenieros de soldadura calificados, promueve investigaciones innovadoras y entrega soluciones de grado industrial. Ya sea soldadura robótica, técnicas basadas en láser o unión avanzada de materiales, nuestras contribuciones están dando forma a la próxima generación de capacidades tecnológicas.",
+    "paragraph4": "Este sitio web es una puerta de entrada para líderes de la industria, investigadores y formuladores de políticas para interactuar con la experiencia de LNMIIT en tecnología de soldadura. Muestra nuestro compromiso de resolver desafíos nacionales y apoyar el progreso económico a través de la excelencia en investigación de soldadura. LNMIIT no solo está desarrollando soldadores; estamos forjando el futuro de la fortaleza industrial y estratégica de la India."
+  },
+  "contact": {
+    "title": "Póngase en Contacto",
+    "subtitle": "Contáctenos",
+    "sendMessage": "Envíenos un mensaje",
+    "description": "No dude en contactarnos a través del formulario de contacto o encontrar nuestra información de contacto a continuación. Sus comentarios, preguntas y sugerencias son importantes para nosotros mientras nos esforzamos por brindar un servicio excepcional a nuestra comunidad universitaria.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Escriba su mensaje aquí",
+    "namePlaceholder": "Ingrese su nombre",
+    "emailPlaceholder": "Ingrese el correo electrónico",
+    "messagePlaceholder": "Ingrese su mensaje aquí",
+    "submit": "Enviar",
+    "sending": "Enviando....",
+    "success": "Mensaje enviado exitosamente",
+    "error": "Mensaje no enviado"
+  },
+  "research": {
+    "subtitle": "Investigación",
+    "title": "Explorar. Descubrir. Innovar.",
+    "intro": "Investigación en Soldadura en LNMIIT — Innovación pionera en tecnologías avanzadas de soldadura a través de investigación interdisciplinaria y colaboración industrial. Nos enfocamos en desarrollar soluciones de soldadura sostenibles, eficientes y de precisión para los desafíos de fabricación de próxima generación en múltiples dominios de ingeniería.",
+    "patentedInnovations": "Innovaciones Patentadas",
+    "patentedDescription": "Nuestro equipo de investigación ha desarrollado y protegido varios procesos de soldadura innovadores a través de patentes, registros de diseño y publicaciones:",
+    "featuredResearch": "Investigación Destacada",
+    "seeMore": "Ver Más"
+  },
+  "hero": {
+    "department": "Departamento de",
+    "mechatronics": "Ingeniería Mecánica-Mecatrónica",
+    "weldingResearch": "Investigación en Soldadura",
+    "tagline": "Forjando Innovación, Encendiendo el Progreso: Explore la Frontera de la Investigación en Soldadura. Descubra Técnicas, Materiales y Tecnologías de Vanguardia que Dan Forma a la Industria de Soldadura del Mañana.",
+    "exploreMore": "Explorar más"
+  },
+  "common": {
+    "ourExpertise": "Nuestra Experiencia",
+    "whatWeProvide": "Lo que Ofrecemos",
+    "gallery": "GALERÍA",
+    "labPhotos": "Fotos del Laboratorio",
+    "testimonials": "TESTIMONIOS",
+    "whatStudentsSay": "Lo que Dicen los Estudiantes"
+  },
+  "facility": {
+    "title": "LABORATORIO DE INVESTIGACIÓN EN SOLDADURA",
+    "intro": "En LNMIIT, nuestro laboratorio de soldadura de vanguardia impulsa los límites de la innovación. Servimos a industrias de todos los tamaños con técnicas avanzadas y consultoría experta a través de nuestras instalaciones de última generación.",
+    "ourFacilities": "Nuestras Instalaciones de Clase Mundial",
+    "readyToExplore": "¿Listo para Explorar Nuestras Capacidades de Soldadura?",
+    "discover": "Descubra cómo nuestras tecnologías avanzadas de soldadura pueden transformar sus procesos de fabricación.",
+    "contactTeam": "Contactar al Equipo de Investigación",
+    "learnMore": "Aprender Más"
+  },
+  "career": {
+    "subtitle": "Carrera",
+    "title": "Lo que Puedes Hacer",
+    "welder": "Soldador/Fabricador",
+    "welderDesc": "Este es el camino profesional más común para las personas capacitadas en soldadura. Los soldadores usan varias técnicas de soldadura para unir componentes metálicos o fabricar estructuras según planos o especificaciones. Trabajan en industrias como construcción, manufactura, construcción naval y automotriz.",
+    "inspector": "Inspector de Soldadura",
+    "inspectorDesc": "Los inspectores de soldadura aseguran que las estructuras y componentes soldados cumplan con los estándares de calidad y seguridad. Inspeccionan soldaduras visualmente y usando métodos de prueba no destructivos como pruebas ultrasónicas (UT), pruebas radiográficas (RT), pruebas de partículas magnéticas (MT) y pruebas de penetración de tinte (PT).",
+    "pipeWelder": "Soldador de Tuberías",
+    "pipeWelderDesc": "Los soldadores de tuberías se especializan en soldar tuberías y oleoductos utilizados en industrias como petróleo y gas, tratamiento de agua y plomería. Deben ser competentes en técnicas de soldadura como TIG (GTAW), varilla (SMAW) y a veces procesos especializados como soldadura orbital.",
+    "engineer": "Ingeniero de Soldadura",
+    "engineerDesc": "Los ingenieros de soldadura diseñan procedimientos de soldadura, desarrollan procesos de soldadura y supervisan operaciones de soldadura en industrias como aeroespacial, automotriz y manufactura. También realizan investigación y desarrollo para mejorar técnicas y materiales de soldadura.",
+    "robotics": "Técnico en Robótica",
+    "roboticsDesc": "Los técnicos en robótica mantienen y programan sistemas de soldadura robótica utilizados en procesos de fabricación automatizados. Solucionan problemas técnicos, realizan mantenimiento preventivo y optimizan el rendimiento del robot para garantizar un funcionamiento eficiente y confiable.",
+    "instructor": "Instructor/Entrenador de Soldadura",
+    "instructorDesc": "Los instructores de soldadura enseñan técnicas de soldadura, procedimientos de seguridad y habilidades relacionadas en escuelas vocacionales, colegios comunitarios y escuelas técnicas. También pueden proporcionar capacitación en el trabajo para aprendices y soldadores de nivel inicial."
+  },
+  "blog": {
+    "title": "Blog de Investigación en Soldadura",
+    "subtitle": "Explore las últimas investigaciones e ideas en tecnología de soldadura",
+    "submitNewPost": "Enviar Nueva Publicación",
+    "submitPost": "Enviar Publicación",
+    "submitTitle": "Enviar Nueva Publicación de Blog",
+    "titleLabel": "Título",
+    "contentLabel": "Contenido",
+    "authorLabel": "Nombre del Autor",
+    "emailLabel": "Correo electrónico",
+    "successMessage": "¡Publicación de blog enviada exitosamente! Será revisada por un administrador.",
+    "minRead": "min de lectura"
+  }
+}
+

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Faculty.css'
+import { useTranslation } from 'react-i18next';
 import hod from '../../assets/hod.png'
 import fac1 from '../../assets/fac1.jpg'
 import fac2 from '../../assets/fac2.jpg'
@@ -25,6 +26,8 @@ import sta6 from '../../assets/sta6.jpg'
 
 
 const Faculty = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className='facultyouter'>
         <div className="containerfac">
@@ -40,7 +43,7 @@ const Faculty = () => {
 Mechanical-Mechatronics Engineering</p>
     </div> */}
 
-    <h1>Regular Faculty</h1>
+    <h1>{t('faculty.regularFaculty')}</h1>
     <div className="line"></div>
     <div className="faculty">
 
@@ -184,7 +187,7 @@ Mechanical-Mechatronics Engineering</p>
       
     </div>
 
-    <h1>Staff Members</h1>
+    <h1>{t('faculty.staffMembers')}</h1>
     <div className="line"></div>
     <div className="staff">
       <div className="staff-member">

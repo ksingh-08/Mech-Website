@@ -1,0 +1,88 @@
+{
+  "about": {
+    "title": "Über Schweißforschung bei",
+    "paragraph1": "Schweißtechnologie ist die stille Kraft hinter dem Wachstum einer Nation und ihrer globalen Statur. Sie treibt Infrastruktur an, stärkt Verteidigungssysteme und fördert den industriellen Fortschritt, was sie für jedes Land, das danach strebt, eine Weltmacht zu werden, unverzichtbar macht. Bei LNMIIT erkennen wir diese strategische Bedeutung an und sind verpflichtet, die Grenzen der Schweißwissenschaft und -technik voranzutreiben.",
+    "paragraph2": "Unsere Schweißforschungs- und -einrichtungen sind darauf ausgelegt, Weltklasse-Standards zu erfüllen, geleitet von international anerkannten Experten auf diesem Gebiet. Von hochpräzisen militärischen Anwendungen bis zum Bau von Kernkraftwerken, Brücken und modernsten Fertigungssystemen stärkt unsere Arbeit Sektoren, die nationale Stärke und wirtschaftliche Vitalität definieren.",
+    "paragraph3": "Da die Industrie zunehmend automatisierte, leistungsstarke und nachhaltige Schweißlösungen fordert, steht LNMIIT an der Spitze und überbrückt die Lücke zwischen Wissenschaft und Industrie. Wir bieten ein robustes Ökosystem, das qualifizierte Schweißingenieure fördert, innovative Forschung vorantreibt und industrielle Lösungen liefert. Ob Roboterschweißen, laserbasierte Techniken oder fortschrittliche Materialverbindung, unsere Beiträge prägen die nächste Generation technologischer Fähigkeiten.",
+    "paragraph4": "Diese Website ist ein Tor für Branchenführer, Forscher und politische Entscheidungsträger, um mit der Expertise von LNMIIT in der Schweißtechnologie zu interagieren. Sie zeigt unser Engagement, nationale Herausforderungen zu lösen und wirtschaftlichen Fortschritt durch Exzellenz in der Schweißforschung zu unterstützen. LNMIIT entwickelt nicht nur Schweißer; wir schmieden die Zukunft der industriellen und strategischen Stärke Indiens."
+  },
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Kontaktieren Sie uns",
+    "sendMessage": "Senden Sie uns eine Nachricht",
+    "description": "Zögern Sie nicht, uns über das Kontaktformular zu erreichen oder unsere Kontaktinformationen unten zu finden. Ihr Feedback, Ihre Fragen und Vorschläge sind uns wichtig, da wir bestrebt sind, unserer Universitätsgemeinschaft außergewöhnlichen Service zu bieten.",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Schreiben Sie Ihre Nachricht hier",
+    "namePlaceholder": "Geben Sie Ihren Namen ein",
+    "emailPlaceholder": "E-Mail eingeben",
+    "messagePlaceholder": "Geben Sie Ihre Nachricht hier ein",
+    "submit": "Absenden",
+    "sending": "Wird gesendet....",
+    "success": "Nachricht erfolgreich gesendet",
+    "error": "Nachricht nicht gesendet"
+  },
+  "research": {
+    "subtitle": "Forschung",
+    "title": "Erkunden. Entdecken. Innovieren.",
+    "intro": "Schweißforschung bei LNMIIT — Pionierinnovation in fortgeschrittenen Schweißtechnologien durch interdisziplinäre Forschung und Industriezusammenarbeit. Wir konzentrieren uns auf die Entwicklung nachhaltiger, effizienter und präziser Schweißlösungen für Fertigungsherausforderungen der nächsten Generation in mehreren Ingenieurdomänen.",
+    "patentedInnovations": "Patentierte Innovationen",
+    "patentedDescription": "Unser Forschungsteam hat mehrere innovative Schweißprozesse durch Patente, Designregistrierungen und Veröffentlichungen entwickelt und geschützt:",
+    "featuredResearch": "Ausgewählte Forschung",
+    "seeMore": "Mehr sehen"
+  },
+  "hero": {
+    "department": "Abteilung für",
+    "mechatronics": "Maschinenbau-Mechatronik",
+    "weldingResearch": "Schweißforschung",
+    "tagline": "Innovation schmieden, Fortschritt entfachen: Erkunden Sie die Grenze der Schweißforschung. Entdecken Sie modernste Techniken, Materialien und Technologien, die die Schweißindustrie von morgen prägen.",
+    "exploreMore": "Mehr erkunden"
+  },
+  "common": {
+    "ourExpertise": "Unsere Expertise",
+    "whatWeProvide": "Was Wir Bieten",
+    "gallery": "GALERIE",
+    "labPhotos": "Laborfotos",
+    "testimonials": "ZEUGNISSE",
+    "whatStudentsSay": "Was Studenten Sagen"
+  },
+  "facility": {
+    "title": "SCHWEISSFORSCHUNGSLABOR",
+    "intro": "Bei LNMIIT treibt unser modernstes Schweißlabor die Grenzen der Innovation voran. Wir bedienen Industrien aller Größen mit fortschrittlichen Techniken und Expertenberatung durch unsere hochmodernen Einrichtungen.",
+    "ourFacilities": "Unsere Weltklasse-Einrichtungen",
+    "readyToExplore": "Bereit, Unsere Schweißfähigkeiten zu Erkunden?",
+    "discover": "Entdecken Sie, wie unsere fortschrittlichen Schweißtechnologien Ihre Fertigungsprozesse transformieren können.",
+    "contactTeam": "Forschungsteam Kontaktieren",
+    "learnMore": "Mehr Erfahren"
+  },
+  "career": {
+    "subtitle": "Karriere",
+    "title": "Was Sie Tun Können",
+    "welder": "Schweißer/Fabrikant",
+    "welderDesc": "Dies ist der häufigste Karriereweg für Personen, die im Schweißen ausgebildet sind. Schweißer verwenden verschiedene Schweißtechniken, um Metallkomponenten zu verbinden oder Strukturen nach Zeichnungen oder Spezifikationen herzustellen. Sie arbeiten in Branchen wie Bauwesen, Fertigung, Schiffbau und Automobilindustrie.",
+    "inspector": "Schweißprüfer",
+    "inspectorDesc": "Schweißprüfer stellen sicher, dass geschweißte Strukturen und Komponenten Qualitäts- und Sicherheitsstandards erfüllen. Sie prüfen Schweißnähte visuell und mit zerstörungsfreien Prüfmethoden wie Ultraschallprüfung (UT), radiografischer Prüfung (RT), Magnetpulverprüfung (MT) und Eindringprüfung (PT).",
+    "pipeWelder": "Rohrschweißer",
+    "pipeWelderDesc": "Rohrschweißer spezialisieren sich auf das Schweißen von Rohren und Pipelines, die in Branchen wie Öl und Gas, Wasseraufbereitung und Sanitärtechnik verwendet werden. Sie müssen in Schweißtechniken wie WIG (GTAW), Stabelektrode (SMAW) und manchmal spezialisierten Prozessen wie Orbitalschweißen kompetent sein.",
+    "engineer": "Schweißingenieur",
+    "engineerDesc": "Schweißingenieure entwerfen Schweißverfahren, entwickeln Schweißprozesse und überwachen Schweißoperationen in Branchen wie Luft- und Raumfahrt, Automobilindustrie und Fertigung. Sie führen auch Forschung und Entwicklung durch, um Schweißtechniken und Materialien zu verbessern.",
+    "robotics": "Robotiktechniker",
+    "roboticsDesc": "Robotiktechniker warten und programmieren robotische Schweißsysteme, die in automatisierten Fertigungsprozessen verwendet werden. Sie beheben technische Probleme, führen vorbeugende Wartung durch und optimieren die Roboterleistung, um einen effizienten und zuverlässigen Betrieb sicherzustellen.",
+    "instructor": "Schweißlehrer/Ausbilder",
+    "instructorDesc": "Schweißlehrer unterrichten Schweißtechniken, Sicherheitsverfahren und verwandte Fähigkeiten an Berufsschulen, Community Colleges und Gewerbeschulen. Sie können auch Schulungen am Arbeitsplatz für Auszubildende und Einstiegsschweißer anbieten."
+  },
+  "blog": {
+    "title": "Schweißforschungsblog",
+    "subtitle": "Erkunden Sie die neuesten Forschungen und Erkenntnisse in der Schweißtechnologie",
+    "submitNewPost": "Neuen Beitrag Einreichen",
+    "submitPost": "Beitrag Einreichen",
+    "submitTitle": "Neuen Blog-Beitrag Einreichen",
+    "titleLabel": "Titel",
+    "contentLabel": "Inhalt",
+    "authorLabel": "Autorenname",
+    "emailLabel": "E-Mail",
+    "successMessage": "Blog-Beitrag erfolgreich eingereicht! Er wird von einem Administrator überprüft.",
+    "minRead": "Min. Lesezeit"
+  }
+}
+

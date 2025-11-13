@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 import provide1 from "../../assets/IC.jpg";
 import sunilPandeyImg from "../../assets/profpandey.png";
 import manoj from "../../assets/manoj.png";
@@ -6,12 +7,13 @@ import deepak from "../../assets/deepak.png";
 import { motion } from "framer-motion";
 
 const Epage1 = () => {
+  const { t } = useTranslation();
   return (
     <div className="bg-gray-50 flex flex-col justify-center items-center min-h-screen mt-14 pt-20 px-4 pb-20">
       {/* Industrial Consultancy Section */}
       <div className="max-w-6xl w-full bg-white shadow-lg rounded-2xl overflow-hidden mb-16">
         <h2 className="text-4xl font-bold text-center text-red-800 pt-8 pb-4">
-          Industrial Consultancy
+          {t('extended.industrialConsultancyTitle')}
         </h2>
         
         <div className="flex flex-col md:flex-row">
@@ -25,7 +27,7 @@ const Epage1 = () => {
           
           <div className="md:w-1/2 p-8">
             <p className="text-gray-700 leading-relaxed mb-6">
-            At LNMIIT, our expert team offers specialized consultancy in welding and manufacturing, bridging academic research with real-world applications. We deliver practical, innovative solutions to optimize production, improve safety, and ensure high-quality results for industry partners.
+            {t('extended.industrialConsultancyContent')}
 
 
             </p>

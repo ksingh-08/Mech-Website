@@ -6,23 +6,26 @@ import Title from '../Title/Title'
 import PhotosUpdated from '../Photos/PhotosUpdated'
 import Testimonials from '../Testimonials/Testimonials'
 import BlurText from "./BlurText";
+import { useTranslation } from 'react-i18next';
 
 const handleAnimationComplete = () => {
   console.log('Animation completed!');
 };
-const Hero = () => { 
+const Hero = () => {
+  const { t } = useTranslation();
+  
   return (
     <>
       <div className='hero container'>
         <div className="hero-text">
           <div className="heading">
-            <h1>Department of</h1>
-            <h1>Mechanical-Mechatronics Engineering</h1> 
+            <h1>{t('hero.department')}</h1>
+            <h1>{t('hero.mechatronics')}</h1> 
           </div>
-          <h1 id="highlightText">Welding Research</h1>
+          <h1 id="highlightText">{t('hero.weldingResearch')}</h1>
 
 <BlurText
-  text="Forging Innovation, Igniting Progress: Explore the Frontier of Welding Research. Uncover Cutting-Edge Techniques, Materials, and Technologies Shaping Tomorrow's Welding Industry."
+  text={t('hero.tagline')}
   delay={100}
   animateBy="words"
   direction="top"
@@ -33,19 +36,19 @@ const Hero = () => {
             "Forging Innovation, Igniting Progress: Explore the Frontier of Welding Research. 
             Uncover Cutting-Edge Techniques, Materials, and Technologies Shaping Tomorrow's Welding Industry."
           </p> */}
-          <a href="#move" className='btn'>Explore more <img src={dark_arrow} alt="" /></a> 
+          <a href="#move" className='btn'>{t('hero.exploreMore')} <img src={dark_arrow} alt="" /></a> 
         </div>
       </div>
       
       <div className="container">
         
-        <Title subTitle='Our Expertise' title='What We Provide'/>
+        <Title subTitle={t('common.ourExpertise')} title={t('common.whatWeProvide')}/>
         <ExtendedUpdated/>
         
-        <Title subTitle='GALLERY' title='Lab Photos'/>
+        <Title subTitle={t('common.gallery')} title={t('common.labPhotos')}/>
         <PhotosUpdated/>
         
-        <Title subTitle='TESTIMONIALS' title='What Students Say'/>
+        <Title subTitle={t('common.testimonials')} title={t('common.whatStudentsSay')}/>
         <Testimonials/>
       </div>
     </>

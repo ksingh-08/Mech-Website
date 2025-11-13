@@ -9,8 +9,10 @@ import res5 from '../../assets/5new.png';
 import Title from '../Title/Title';
 import StarBorder from './StarBorder';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const ResearchUpdate = () => {
+  const { t } = useTranslation();
   const researchItems = [
     {
       image: res1,
@@ -71,15 +73,12 @@ const ResearchUpdate = () => {
 
   return (
     <div className="pt-3 px-4 mt-10 bg-gray-50 pb-12">
-      <Title subTitle="Research" title="Explore. Discover. Innovate." />
+      <Title subTitle={t('research.subtitle')} title={t('research.title')} />
       
       {/* Introduction Section */}
       <div className="max-w-6xl mx-auto mb-12 bg-white p-8 rounded-xl shadow-md border border-gray-100">
         <p className="text-xl leading-relaxed">
-          <span className="text-red-700 font-bold">Welding Research at LNMIIT</span>
-          — Pioneering innovation in advanced welding technologies through interdisciplinary research and industry collaboration. We focus on developing 
-          <span className="text-red-700 font-bold"> sustainable, efficient, and precision welding solutions </span>
-          for next-generation manufacturing challenges across multiple engineering domains.
+          {t('research.intro')}
         </p>
       </div>
 
@@ -96,11 +95,11 @@ const ResearchUpdate = () => {
           <div className="absolute bottom-0 left-0 w-60 h-60 bg-red-700 opacity-5 rounded-full transform -translate-x-24 translate-y-24"></div>
           
           <h2 className="text-2xl font-bold mb-6 text-gray-800 relative">
-            <span className="border-b-4 border-red-700 pb-1">Patented Innovations</span>
+            <span className="border-b-4 border-red-700 pb-1">{t('research.patentedInnovations')}</span>
           </h2>
           
           <p className="text-lg mb-8">
-            Our research team has developed and protected several innovative welding processes through patents, design registrations, and publications:
+            {t('research.patentedDescription')}
           </p>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -132,7 +131,7 @@ const ResearchUpdate = () => {
 
       {/* Research Items Section */}
       <h2 className="text-2xl font-bold mb-8 text-center text-gray-800">
-        <span className="border-b-4 border-red-700 pb-1">Featured Research</span>
+        <span className="border-b-4 border-red-700 pb-1">{t('research.featuredResearch')}</span>
       </h2>
       
       {researchItems.map((item, index) => (
@@ -156,13 +155,13 @@ const ResearchUpdate = () => {
                 {item.title}
               </h3>
               <Link to={item.link}>
-                <StarBorder
+                  <StarBorder
                   as="button"
                   className="mt-4 text-white"
                   color="white"
                   speed="5s"
                 >
-                  See More
+                  {t('research.seeMore')}
                 </StarBorder>
               </Link>
             </div>

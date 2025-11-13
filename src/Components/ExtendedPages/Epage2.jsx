@@ -33,10 +33,12 @@
 
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import provide2 from '../../assets/Inhouse.jpg'
 import mttdPdf from '../../assets/cif/MTTD.pdf';
 
 const Epage2 = () => {
+  const { t } = useTranslation();
   
 
   return (
@@ -52,18 +54,13 @@ const Epage2 = () => {
         </div>
         
         <div className="md:w-1/2 p-8 flex flex-col justify-center">
-          <h3 className="text-4xl flex items-center justify-center font-bold text-red-800 mb-8">In-House Training Program</h3>
+          <h3 className="text-4xl flex items-center justify-center font-bold text-red-800 mb-8">{t('extended.trainingTitle')}</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            We offer in-depth in-house training programs for individuals and organizations to build welding expertise. 
-            From safety protocols and hands-on techniques to modern equipment and best practices, our sessions cater to 
-            all skill levels under expert guidance.
-          </p>
-          <p>
-            Whether you're starting your welding journey or seeking advanced insights, our practical and research-driven curriculum ensures valuable learning outcomes for everyone involved.
+            {t('extended.trainingContent')}
           </p>
           <br/>
 
-          <h3 className="text-4xl flex items-center justify-center font-bold text-red-800 mb-8">Courses Offered</h3>
+          <h3 className="text-4xl flex items-center justify-center font-bold text-red-800 mb-8">{t('extended.coursesOffered')}</h3>
           <ul className="list-disc pl-5 text-gray-700 mb-6">
             <li className="mb-3">
               <a href="../../assets/cif/INDWEL.pdf"  target="_blank" className="text-blue-600 hover:underline">

@@ -32,10 +32,12 @@
 
 // export default Epage3;
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import provide3 from '../../assets/Workshop.jpg';
 import { useNavigate } from 'react-router-dom';
 
 const Epage3 = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   const handleRedirect = () => {
@@ -70,15 +72,11 @@ const Epage3 = () => {
         </div>
         
         <div className="md:w-1/2 p-8 flex flex-col justify-center">
-        <h3 className="text-4xl  flex items-center justify-center font-bold text-red-800 mb-8">WorkShop Facilities</h3>
+        <h3 className="text-4xl  flex items-center justify-center font-bold text-red-800 mb-8">{t('extended.workshopTitle')}</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Our advanced workshop is equipped for hands-on training, welding research, and project development. 
-            With cutting-edge tools and safety gear, it simulates real-world welding environments for effective learning.
-            <br /><br />
-            From refining welding techniques to conducting experiments, our space empowers learners to gain practical skills 
-            and industry-ready experience.
+            {t('extended.workshopContent')}
           </p>
-          <h3 className="text-4xl  flex items-center justify-center font-bold text-red-800 mb-8">Our Facilities</h3>
+          <h3 className="text-4xl  flex items-center justify-center font-bold text-red-800 mb-8">{t('extended.availableFacilities')}</h3>
           <ul className="list-disc list-inside text-gray-700 mb-6 space-y-1">
             {facilities.map((item, index) => (
               <li key={index} >{item}</li>
@@ -88,7 +86,7 @@ const Epage3 = () => {
           <div>
             {/* Button-based redirect */}
             <button onClick={handleRedirect} className="px-4 py-2 bg-red-800 text-white rounded-lg hover:bg-red-600">
-              Go to the Facility Page
+              {t('extended.goToFacilityPage')}
             </button>
           </div>
         </div>

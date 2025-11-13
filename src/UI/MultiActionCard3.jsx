@@ -6,8 +6,10 @@ import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 import provide3 from '../assets/Workshop.jpg';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export default function MultiActionAreaCard3() {
+  const { t } = useTranslation();
   return (
     <Link to="/workshop" className="no-underline">
       <Card
@@ -32,10 +34,10 @@ export default function MultiActionAreaCard3() {
           />
           <CardContent>
           <Typography gutterBottom variant="h5" component="div" sx={{ fontWeight: 'bold' }}>
-              Dedicated Workshops
+              {t('extended.dedicatedWorkshops')}
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              Our dedicated workshop provides a well-equipped and conducive environment for hands-on welding training, research, and development activities...
+              {t('extended.dedicatedWorkshopsDesc')}
             </Typography>
           </CardContent>
         </CardActionArea>

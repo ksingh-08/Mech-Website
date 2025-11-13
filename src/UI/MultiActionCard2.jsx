@@ -6,8 +6,10 @@ import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 import provide1 from '../assets/IC.jpg';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export default function MultiActionAreaCard2() {
+  const { t } = useTranslation();
   return (
     <Link to="/industry-consultancy" className="no-underline">
       <Card
@@ -32,10 +34,10 @@ export default function MultiActionAreaCard2() {
           />
           <CardContent>
           <Typography gutterBottom variant="h5" component="div" sx={{ fontWeight: 'bold' }}>
-              Industrial Consultancy
+              {t('extended.industrialConsultancy')}
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              We offer industrial consultancy services to businesses and organizations in the welding industry. Our experienced faculties provide professional advice...
+              {t('extended.industrialConsultancyDesc')}
             </Typography>
           </CardContent>
         </CardActionArea>

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Blog = () => {
+  const { t } = useTranslation();
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [newPost, setNewPost] = useState({
@@ -18,7 +20,7 @@ const Blog = () => {
     const wordsPerMinute = 200; // Average reading speed
     const words = content.split(/\s+/).length;
     const minutes = Math.ceil(words / wordsPerMinute);
-    return minutes < 1 ? '1 min read' : `${minutes} min read`;
+    return minutes < 1 ? `1 ${t('blog.minRead')}` : `${minutes} ${t('blog.minRead')}`;
   };
 
   useEffect(() => {
@@ -51,7 +53,7 @@ const Blog = () => {
       });
       
       if (response.ok) {
-        alert('Blog post submitted successfully! It will be reviewed by an admin.');
+        alert(t('blog.successMessage'));
         setNewPost({ title: '', content: '', author: '', email: '' });
         setShowForm(false);
       }
@@ -64,8 +66,8 @@ const Blog = () => {
     <div className="min-h-screen bg-gray-100 py-12 mt-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Welding Research Blog</h1>
-          <p className="text-xl text-gray-600 mb-8">Explore the latest research and insights in welding technology</p>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">{t('blog.title')}</h1>
+          <p className="text-xl text-gray-600 mb-8">{t('blog.subtitle')}</p>
           <button
             onClick={() => navigate('/blog/submit')}
             className="bg-red-900 text-white px-6 py-3 rounded-lg hover:bg-red-800 transition-colors inline-flex items-center"
@@ -73,16 +75,16 @@ const Blog = () => {
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
             </svg>
-            Submit New Post
+            {t('blog.submitNewPost')}
           </button>
         </div>
 
         {showForm && (
           <div className="mt-8 bg-white p-6 rounded-lg shadow-md">
-            <h2 className="text-2xl font-semibold mb-4">Submit New Blog Post</h2>
+            <h2 className="text-2xl font-semibold mb-4">{t('blog.submitTitle')}</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-gray-700">Title</label>
+                <label className="block text-sm font-medium text-gray-700">{t('blog.titleLabel')}</label>
                 <input
                   type="text"
                   value={newPost.title}
@@ -92,7 +94,7 @@ const Blog = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700">Content</label>
+                <label className="block text-sm font-medium text-gray-700">{t('blog.contentLabel')}</label>
                 <textarea
                   value={newPost.content}
                   onChange={(e) => setNewPost({ ...newPost, content: e.target.value })}
@@ -102,7 +104,7 @@ const Blog = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700">Author Name</label>
+                <label className="block text-sm font-medium text-gray-700">{t('blog.authorLabel')}</label>
                 <input
                   type="text"
                   value={newPost.author}
@@ -112,7 +114,7 @@ const Blog = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700">Email</label>
+                <label className="block text-sm font-medium text-gray-700">{t('blog.emailLabel')}</label>
                 <input
                   type="email"
                   value={newPost.email}
@@ -125,7 +127,7 @@ const Blog = () => {
                 type="submit"
                 className="w-full bg-red-900 text-white py-2 px-4 rounded-md hover:bg-red-800 transition-colors"
               >
-                Submit Post
+                {t('blog.submitPost')}
               </button>
             </form>
           </div>

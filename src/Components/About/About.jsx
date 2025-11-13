@@ -1,8 +1,11 @@
 import React from "react";
 import aboutimg from "../../assets/gal2.jpeg";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-100 md:p-auto pt-32 md:pl-0 md:pr-0 pl-4 pr-4 pb-10">
       <motion.div
@@ -22,51 +25,19 @@ const About = () => {
         {/* Text Content */}
         <div className="text-gray-800 text-[18px]">
           <h2 className="text-4xl font-bold mb-4 text-gray-900">
-            About Welding Research at <span className="text-[#212ea0]">LNMIIT</span>
+            {t('about.title')} <span className="text-[#212ea0]">LNMIIT</span>
           </h2>
           <p className="mb-4 text-gray-700 leading-relaxed">
-            {/* Welcome to Welding Research at LNMIIT! We're a passionate team of
-            researchers and educators dedicated to advancing welding technology
-            through innovation and hands-on exploration. */}
-            Welding technology is the silent force behind a nation’s growth and
-            global stature. It powers infrastructure, fortifies defence systems,
-            and fuels industrial advancement—making it indispensable for any
-            country aspiring to rise as a world power. At LNMIIT, we recognize
-            this strategic importance and are committed to advancing the
-            frontiers of welding science and engineering.
+            {t('about.paragraph1')}
           </p>
           <p className="mb-4 text-gray-700 leading-relaxed">
-            {/* Our mission is to push beyond traditional welding practices by
-            experimenting with cutting-edge techniques, materials, and
-            processes. We collaborate with industries and academics to solve
-            real-world challenges and pioneer next-gen solutions. */}
-            Our Welding Research and Facilities are designed to meet world-class
-            standards, guided by internationally renowned experts in the field.
-            From high-precision military applications to the construction of
-            nuclear power plants, bridges, and cutting-edge manufacturing
-            systems, our work empowers sectors that define national strength and
-            economic vitality.
+            {t('about.paragraph2')}
           </p>
           <p className="mb-4 text-gray-700 leading-relaxed">
-            {/* Through our curriculum and workshops, we empower students with
-            practical skills and critical insights. Join us in shaping the
-            future of welding technology—one spark at a time. */}
-            As industries increasingly demand automated, high-performance, and
-            sustainable welding solutions, LNMIIT stands at the forefront,
-            bridging the gap between academia and industry. We offer a robust
-            ecosystem that nurtures skilled welding engineers, promotes
-            innovative research, and delivers industrial-grade solutions.
-            Whether it's robotic welding, laser-based techniques, or advanced
-            material joining, our contributions are shaping the next generation
-            of technological capabilities.
+            {t('about.paragraph3')}
           </p>
           <p className="text-gray-700 leading-relaxed">
-            This website is a gateway for industry leaders, researchers, and
-            policy makers to engage with LNMIIT’s expertise in welding
-            technology. It showcases our commitment to solving national
-            challenges and supporting economic progress through excellence in
-            welding research. LNMIIT is not just developing welders; we are
-            forging the future of India’s industrial and strategic strength.
+            {t('about.paragraph4')}
           </p>
         </div>
       </motion.div>

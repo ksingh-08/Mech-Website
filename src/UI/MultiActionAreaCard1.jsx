@@ -6,8 +6,10 @@ import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 import provide2 from '../assets/Inhouse.jpg';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export default function MultiActionAreaCard1() {
+  const { t } = useTranslation();
   return (
     <Link to="training" className="no-underline">
       <Card
@@ -32,10 +34,10 @@ export default function MultiActionAreaCard1() {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div" sx={{ fontWeight: 'bold' }}>
-              Inhouse Training
+              {t('extended.inhouseTraining')}
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary'}}>
-              We provide comprehensive in-house training programs for individuals and organizations looking to enhance their welding skills and knowledge.
+              {t('extended.inhouseTrainingDesc')}
             </Typography>
           </CardContent>
         </CardActionArea>

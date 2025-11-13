@@ -51,6 +51,10 @@ import SubmitPost from './Components/Blog/SubmitPost';
 import BlogPost from './Components/Blog/BlogPost';
 import AdminDashboard from './Components/Admin/AdminDashboard';
 import AdminBlogPost from './Components/Admin/AdminBlogPost';
+import Chatbot from './Components/Chatbot/Chatbot';
+import WhyPhD from './Components/WhyPhD/WhyPhD';
+import WeldingDefects from './Components/WeldingDefects/WeldingDefects';
+import TechnicalKnowledge from './Components/TechnicalKnowledge/TechnicalKnowledge';
 
 const App = () => {
   return (
@@ -96,8 +100,12 @@ const App = () => {
            <Route path="/blog/:id" element={<ScrollToTopLayout><BlogPost /></ScrollToTopLayout>} />
            <Route path="/admin" element={<ScrollToTopLayout><AdminDashboard /></ScrollToTopLayout>} />
            <Route path="/admin/blog/:id" element={<ScrollToTopLayout><AdminBlogPost /></ScrollToTopLayout>} />
+           <Route path="/why-phd" element={<ScrollToTopLayout><WhyPhD /></ScrollToTopLayout>} />
+           <Route path="/welding-defects" element={<ScrollToTopLayout><WeldingDefects /></ScrollToTopLayout>} />
+           <Route path="/technical-knowledge" element={<ScrollToTopLayout><TechnicalKnowledge /></ScrollToTopLayout>} />
            </Routes>
       <Footer/>
+      <Chatbot/>
       
     </div>
   )

@@ -234,6 +234,7 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useTranslation } from 'react-i18next';
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -341,6 +342,7 @@ const FACILITIES = [
 ];
 
 const FacilityPage = () => {
+  const { t } = useTranslation();
   const [activeFacility, setActiveFacility] = useState(FACILITIES[0]);
   const [fadeState, setFadeState] = useState("fade-in");
   const [autoRotateIndex, setAutoRotateIndex] = useState(0);
@@ -373,20 +375,12 @@ const FacilityPage = () => {
             className="text-center  mt-20 mb-10 text-4xl font-bold text-red-900"
             style={{ color: "#000F38" }}
           >
-            WELDING RESEARCH LABORATORY{" "}
+            {t('facility.title')}
           </h1>
           {/* <div className="h-1 w-60 bg-red-600 mx-auto rounded-full mb-8"></div> */}
           <div className="max-w-6xl mx-auto mb-12 bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100">
             <p className="text-xl leading-relaxed">
-              At <span className="text-red-700 font-bold">LNMIIT</span>, our
-              cutting-edge welding lab pushes the boundaries of innovation. We
-              serve industries of all sizes with advanced techniques and expert
-              consultancy through our
-              <span className="text-red-700 font-bold">
-                {" "}
-                state-of-the-art facilities
-              </span>
-              .
+              {t('facility.intro')}
             </p>
           </div>
         </div>
@@ -394,7 +388,7 @@ const FacilityPage = () => {
         <div className="mb-20">
           <div className="mb-10">
             <h2 className="text-3xl font-bold text-center mb-3 text-gray-800">
-              Our World-Class Facilities
+              {t('facility.ourFacilities')}
             </h2>
             <div className="h-1 w-32 bg-red-600 mx-auto rounded-full"></div>
           </div>
@@ -566,7 +560,7 @@ const FacilityPage = () => {
           to={facility.link}
           className="inline-block px-6 py-3 bg-red-700 hover:bg-red-600 text-white rounded-lg shadow-md transition-all duration-300"
         >
-          Learn More
+          {t('facility.learnMore')}
         </Link>
       </div>
 
@@ -588,16 +582,15 @@ const FacilityPage = () => {
         {/* CTA */}
         <div className="text-center mt-16 max-w-6xl mx-auto bg-gray-50 rounded-xl p-8 shadow-sm">
           <h2 className="text-2xl font-bold mb-4 text-gray-800">
-            Ready to Explore Our Welding Capabilities?
+            {t('facility.readyToExplore')}
           </h2>
           <p className="mb-6 text-gray-700">
-            Discover how our advanced welding technologies can transform your
-            manufacturing processes.
+            {t('facility.discover')}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
           <Link to="/contact" className="block w-full h-full">
             <button className="px-6 py-3 bg-white hover:bg-gray-100 border-2 border-red-700 text-red-700 rounded-lg shadow-md transition-all duration-300">
-                Contact Research Team
+                {t('facility.contactTeam')}
             </button>
             </Link>
           </div>

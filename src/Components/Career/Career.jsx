@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 // For a real implementation, you would import these images
 // These are placeholders to represent the imports from your original code
@@ -11,41 +12,42 @@ import car6 from '../../assets/car6.jpg'
 import car7 from '../../assets/car7.jpg'
 import career1 from '../../assets/career1.jpeg'
 export default function Career() {
+  const { t } = useTranslation();
   const careerData = [
     {
       id: 1,
-      title: "Welder/Fabricator",
-      description: "This is the most common career path for individuals trained in welding. Welders use various welding techniques to join metal components or fabricate structures according to blueprints or specifications. They work in industries such as construction, manufacturing, shipbuilding, and automotive.",
+      title: t('career.welder'),
+      description: t('career.welderDesc'),
       image: car1
     },
     {
       id: 2,
-      title: "Welding Inspector",
-      description: "Welding inspectors ensure that welded structures and components meet quality and safety standards. They inspect welds visually and using non-destructive testing methods such as ultrasonic testing (UT), radiographic testing (RT), magnetic particle testing (MT), and dye penetrant testing (PT).",
+      title: t('career.inspector'),
+      description: t('career.inspectorDesc'),
       image: car2
     },
     {
       id: 3,
-      title: "Pipe Welder",
-      description: "Pipe welders specialize in welding pipes and pipelines used in industries such as oil and gas, water treatment, and plumbing. They must be proficient in welding techniques such as TIG (GTAW), stick (SMAW), and sometimes specialized processes like orbital welding.",
+      title: t('career.pipeWelder'),
+      description: t('career.pipeWelderDesc'),
       image: car3
     },
     {
       id: 4,
-      title: "Welding Engineer",
-      description: "Welding engineers design welding procedures, develop welding processes, and oversee welding operations in industries such as aerospace, automotive, and manufacturing. They also conduct research and development to improve welding techniques and materials.",
+      title: t('career.engineer'),
+      description: t('career.engineerDesc'),
       image: car4
     },
     {
       id: 5,
-      title: "Robotics Technician",
-      description: "Robotics technicians maintain and program robotic welding systems used in automated manufacturing processes. They troubleshoot technical issues, perform preventive maintenance, and optimize robot performance to ensure efficient and reliable operation.",
+      title: t('career.robotics'),
+      description: t('career.roboticsDesc'),
       image: car5
     },
     {
       id: 6,
-      title: "Welding Instructor/Trainer",
-      description: "Welding instructors teach welding techniques, safety procedures, and related skills at vocational schools, community colleges, and trade schools. They may also provide on-the-job training for apprentices and entry-level welders.",
+      title: t('career.instructor'),
+      description: t('career.instructorDesc'),
       image: career1
     },
     // {
@@ -63,8 +65,8 @@ export default function Career() {
       <div className="max-w-7xl mx-auto">
         {/* Title Component */}
         <div className="text-center mb-16">
-          <h3 className="text-base font-semibold text-[#212EA0] tracking-wide uppercase">Career</h3>
-          <h2 className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">What You Can Do</h2>
+          <h3 className="text-base font-semibold text-[#212EA0] tracking-wide uppercase">{t('career.subtitle')}</h3>
+          <h2 className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">{t('career.title')}</h2>
           <div className="mt-4 max-w-2xl mx-auto">
             {/* <div className="w-24 h-1 bg-blue-600 mx-auto rounded"></div> */}
           </div>

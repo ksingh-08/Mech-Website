@@ -1,0 +1,88 @@
+{
+  "about": {
+    "title": "À propos de la Recherche en Soudage à",
+    "paragraph1": "La technologie de soudage est la force silencieuse derrière la croissance d'une nation et sa stature mondiale. Elle alimente les infrastructures, renforce les systèmes de défense et stimule l'avancement industriel, ce qui la rend indispensable pour tout pays aspirant à devenir une puissance mondiale. À LNMIIT, nous reconnaissons cette importance stratégique et nous nous engageons à faire progresser les frontières de la science et de l'ingénierie du soudage.",
+    "paragraph2": "Nos Installations et Recherche en Soudage sont conçues pour répondre aux normes de classe mondiale, guidées par des experts internationalement reconnus dans le domaine. Des applications militaires de haute précision à la construction de centrales nucléaires, de ponts et de systèmes de fabrication de pointe, notre travail renforce les secteurs qui définissent la force nationale et la vitalité économique.",
+    "paragraph3": "Alors que les industries exigent de plus en plus des solutions de soudage automatisées, performantes et durables, LNMIIT est à l'avant-garde, comblant le fossé entre le monde universitaire et l'industrie. Nous offrons un écosystème robuste qui nourrit les ingénieurs en soudage qualifiés, promeut la recherche innovante et fournit des solutions de qualité industrielle. Qu'il s'agisse de soudage robotique, de techniques basées sur le laser ou d'assemblage avancé de matériaux, nos contributions façonnent la prochaine génération de capacités technologiques.",
+    "paragraph4": "Ce site web est une passerelle pour les dirigeants de l'industrie, les chercheurs et les décideurs politiques pour s'engager avec l'expertise de LNMIIT en technologie de soudage. Il montre notre engagement à résoudre les défis nationaux et à soutenir le progrès économique grâce à l'excellence en recherche de soudage. LNMIIT ne développe pas seulement des soudeurs; nous forgeons l'avenir de la force industrielle et stratégique de l'Inde."
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Contactez-nous",
+    "sendMessage": "Envoyez-nous un message",
+    "description": "N'hésitez pas à nous contacter via le formulaire de contact ou à trouver nos informations de contact ci-dessous. Vos commentaires, questions et suggestions sont importants pour nous alors que nous nous efforçons de fournir un service exceptionnel à notre communauté universitaire.",
+    "name": "Nom",
+    "email": "E-mail",
+    "message": "Écrivez votre message ici",
+    "namePlaceholder": "Entrez votre nom",
+    "emailPlaceholder": "Entrez l'e-mail",
+    "messagePlaceholder": "Entrez votre message ici",
+    "submit": "Soumettre",
+    "sending": "Envoi en cours....",
+    "success": "Message envoyé avec succès",
+    "error": "Message non envoyé"
+  },
+  "research": {
+    "subtitle": "Recherche",
+    "title": "Explorer. Découvrir. Innover.",
+    "intro": "Recherche en Soudage à LNMIIT — Innovation pionnière dans les technologies de soudage avancées grâce à la recherche interdisciplinaire et à la collaboration industrielle. Nous nous concentrons sur le développement de solutions de soudage durables, efficaces et précises pour les défis de fabrication de nouvelle génération dans plusieurs domaines de l'ingénierie.",
+    "patentedInnovations": "Innovations Brevetées",
+    "patentedDescription": "Notre équipe de recherche a développé et protégé plusieurs processus de soudage innovants grâce à des brevets, des enregistrements de conception et des publications:",
+    "featuredResearch": "Recherche en Vedette",
+    "seeMore": "Voir Plus"
+  },
+  "hero": {
+    "department": "Département de",
+    "mechatronics": "Génie Mécanique-Mécatronique",
+    "weldingResearch": "Recherche en Soudage",
+    "tagline": "Forger l'Innovation, Allumer le Progrès: Explorez la Frontière de la Recherche en Soudage. Découvrez les Techniques, Matériaux et Technologies de Pointe qui Façonnent l'Industrie du Soudage de Demain.",
+    "exploreMore": "Explorer plus"
+  },
+  "common": {
+    "ourExpertise": "Notre Expertise",
+    "whatWeProvide": "Ce que Nous Offrons",
+    "gallery": "GALERIE",
+    "labPhotos": "Photos du Laboratoire",
+    "testimonials": "TÉMOIGNAGES",
+    "whatStudentsSay": "Ce que Disent les Étudiants"
+  },
+  "facility": {
+    "title": "LABORATOIRE DE RECHERCHE EN SOUDAGE",
+    "intro": "À LNMIIT, notre laboratoire de soudage de pointe repousse les limites de l'innovation. Nous servons des industries de toutes tailles avec des techniques avancées et des conseils d'experts grâce à nos installations de pointe.",
+    "ourFacilities": "Nos Installations de Classe Mondiale",
+    "readyToExplore": "Prêt à Explorer Nos Capacités de Soudage?",
+    "discover": "Découvrez comment nos technologies de soudage avancées peuvent transformer vos processus de fabrication.",
+    "contactTeam": "Contacter l'Équipe de Recherche",
+    "learnMore": "En Savoir Plus"
+  },
+  "career": {
+    "subtitle": "Carrière",
+    "title": "Ce que Vous Pouvez Faire",
+    "welder": "Soudeur/Fabricant",
+    "welderDesc": "C'est le cheminement de carrière le plus courant pour les personnes formées en soudage. Les soudeurs utilisent diverses techniques de soudage pour joindre des composants métalliques ou fabriquer des structures selon des plans ou des spécifications. Ils travaillent dans des industries telles que la construction, la fabrication, la construction navale et l'automobile.",
+    "inspector": "Inspecteur de Soudage",
+    "inspectorDesc": "Les inspecteurs de soudage s'assurent que les structures et composants soudés répondent aux normes de qualité et de sécurité. Ils inspectent les soudures visuellement et en utilisant des méthodes de test non destructives telles que les tests ultrasonores (UT), les tests radiographiques (RT), les tests de particules magnétiques (MT) et les tests de pénétration de colorant (PT).",
+    "pipeWelder": "Soudeur de Tuyaux",
+    "pipeWelderDesc": "Les soudeurs de tuyaux se spécialisent dans le soudage de tuyaux et pipelines utilisés dans des industries telles que le pétrole et le gaz, le traitement de l'eau et la plomberie. Ils doivent être compétents dans des techniques de soudage telles que TIG (GTAW), baguette (SMAW) et parfois des processus spécialisés comme le soudage orbital.",
+    "engineer": "Ingénieur en Soudage",
+    "engineerDesc": "Les ingénieurs en soudage conçoivent des procédures de soudage, développent des processus de soudage et supervisent les opérations de soudage dans des industries telles que l'aérospatiale, l'automobile et la fabrication. Ils mènent également des recherches et développement pour améliorer les techniques et matériaux de soudage.",
+    "robotics": "Technicien en Robotique",
+    "roboticsDesc": "Les techniciens en robotique entretiennent et programment des systèmes de soudage robotiques utilisés dans les processus de fabrication automatisés. Ils résolvent les problèmes techniques, effectuent la maintenance préventive et optimisent les performances du robot pour assurer un fonctionnement efficace et fiable.",
+    "instructor": "Instructeur/Formateur en Soudage",
+    "instructorDesc": "Les instructeurs de soudage enseignent les techniques de soudage, les procédures de sécurité et les compétences connexes dans les écoles professionnelles, les collèges communautaires et les écoles de métiers. Ils peuvent également fournir une formation en cours d'emploi pour les apprentis et les soudeurs de niveau d'entrée."
+  },
+  "blog": {
+    "title": "Blog de Recherche en Soudage",
+    "subtitle": "Explorez les dernières recherches et idées en technologie de soudage",
+    "submitNewPost": "Soumettre une Nouvelle Publication",
+    "submitPost": "Soumettre la Publication",
+    "submitTitle": "Soumettre une Nouvelle Publication de Blog",
+    "titleLabel": "Titre",
+    "contentLabel": "Contenu",
+    "authorLabel": "Nom de l'Auteur",
+    "emailLabel": "E-mail",
+    "successMessage": "Publication de blog soumise avec succès! Elle sera examinée par un administrateur.",
+    "minRead": "min de lecture"
+  }
+}
+
