@@ -10,7 +10,7 @@ const AdminDashboard = () => {
     password: ''
   });
   const navigate = useNavigate();
-const backend = "https://mech-website-ankur.onrender.com"
+const backend = "https://mech-website-s7h6.onrender.com"
   // Calculate reading time based on content length
   const calculateReadTime = (content) => {
     const wordsPerMinute = 200; // Average reading speed

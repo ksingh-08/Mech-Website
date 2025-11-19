@@ -28,7 +28,7 @@ const Blog = () => {
     fetchBlogPosts();
   }, []);
 
-  const backend = "https://mech-website-ankur.onrender.com"
+  const backend = "https://mech-website-s7h6.onrender.com"
   const fetchBlogPosts = async () => {
     try {
       const response = await fetch(`${backend}/api/blog/posts`);

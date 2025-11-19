@@ -9,7 +9,7 @@ const SubmitPost = () => {
     email: ''
   });
   const navigate = useNavigate();
-const backend = "https://mech-website-ankur.onrender.com"
+const backend = "https://mech-website-s7h6.onrender.com"
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {

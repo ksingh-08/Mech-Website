@@ -10,7 +10,7 @@ const BlogPost = () => {
   useEffect(() => {
     fetchBlogPost();
   }, [id]);
-const backend = "https://mech-website-ankur.onrender.com"
+const backend = "https://mech-website-s7h6.onrender.com"
   const fetchBlogPost = async () => {
     try {
       const response = await fetch(`${backend}/api/blog/posts/${id}`);
