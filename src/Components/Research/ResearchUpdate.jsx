@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Research.css';
 import { Link } from 'react-router-dom';
 import res1 from '../../assets/1new.jpg';
@@ -10,9 +10,11 @@ import Title from '../Title/Title';
 import StarBorder from './StarBorder';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { FiSearch } from 'react-icons/fi';
 
 const ResearchUpdate = () => {
   const { t } = useTranslation();
+  const [searchQuery, setSearchQuery] = useState("");
   const researchItems = [
     {
       image: res1,
@@ -130,11 +132,48 @@ const ResearchUpdate = () => {
       </motion.div>
 
       {/* Research Items Section */}
-      <h2 className="text-2xl font-bold mb-8 text-center text-gray-800">
-        <span className="border-b-4 border-red-700 pb-1">{t('research.featuredResearch')}</span>
-      </h2>
+      <div className="mb-8">
+        <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">
+          <span className="border-b-4 border-red-700 pb-1">{t('research.featuredResearch')}</span>
+        </h2>
+        
+        {/* Search/Filter Bar */}
+        <div className="max-w-2xl mx-auto mb-8">
+          <div className="relative">
+            <input
+              type="text"
+              placeholder={t('research.searchPlaceholder') || "Search research papers..."}
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full px-4 py-3 pl-12 border-2 border-gray-300 rounded-lg focus:border-red-800 focus:outline-none text-lg"
+            />
+            <FiSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+            {searchQuery && (
+              <button
+                onClick={() => setSearchQuery("")}
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            )}
+          </div>
+          {searchQuery && (
+            <p className="text-sm text-gray-600 mt-2 text-center">
+              {researchItems.filter((item) =>
+                item.title.toLowerCase().includes(searchQuery.toLowerCase())
+              ).length} {t('research.resultsFound') || 'result(s) found'}
+            </p>
+          )}
+        </div>
+      </div>
       
-      {researchItems.map((item, index) => (
+      {researchItems
+        .filter((item) =>
+          item.title.toLowerCase().includes(searchQuery.toLowerCase())
+        )
+        .map((item, index) => (
         <div className="mb-6" key={index}>
           <motion.div
             initial={{ opacity: 0, y: 25 }}

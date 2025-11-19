@@ -4,6 +4,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -58,11 +59,12 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const { t } = useTranslation();
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
-          Why Welding Research?
+          {t('scope.whyWeldingResearch')}
         </p>
         {/* <h2 className={`${styles.sectionHeadText} text-center`}>
         Advancing Welding for a Stronger Future

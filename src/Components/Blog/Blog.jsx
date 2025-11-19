@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { FiSearch } from 'react-icons/fi';
 
 const Blog = () => {
   const { t } = useTranslation();
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [searchQuery, setSearchQuery] = useState("");
   const [newPost, setNewPost] = useState({
     title: '',
     content: '',
@@ -14,6 +16,13 @@ const Blog = () => {
   });
   const [showForm, setShowForm] = useState(false);
   const navigate = useNavigate();
+
+  // Filter posts based on search query
+  const filteredPosts = posts.filter((post) =>
+    post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    post.content.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    post.author.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   // Calculate reading time based on content length
   const calculateReadTime = (content) => {
@@ -68,6 +77,36 @@ const Blog = () => {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">{t('blog.title')}</h1>
           <p className="text-xl text-gray-600 mb-8">{t('blog.subtitle')}</p>
+          
+          {/* Search/Filter Bar */}
+          <div className="max-w-2xl mx-auto mb-6">
+            <div className="relative">
+              <input
+                type="text"
+                placeholder={t('blog.searchPlaceholder') || "Search blog posts..."}
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full px-4 py-3 pl-12 border-2 border-gray-300 rounded-lg focus:border-red-800 focus:outline-none text-lg"
+              />
+              <FiSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery("")}
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              )}
+            </div>
+            {searchQuery && (
+              <p className="text-sm text-gray-600 mt-2">
+                {filteredPosts.length} {t('blog.resultsFound') || 'result(s) found'}
+              </p>
+            )}
+          </div>
+          
           <button
             onClick={() => navigate('/blog/submit')}
             className="bg-red-900 text-white px-6 py-3 rounded-lg hover:bg-red-800 transition-colors inline-flex items-center"
@@ -162,8 +201,8 @@ const Blog = () => {
                 </div>
               </div>
             ))
-          ) : (
-            posts.map((post) => (
+          ) : filteredPosts.length > 0 ? (
+            filteredPosts.map((post) => (
               <Link
                 key={post._id}
                 to={`/blog/${post._id}`}
@@ -199,6 +238,10 @@ const Blog = () => {
                 </div>
               </Link>
             ))
+          ) : (
+            <div className="col-span-full text-center py-12">
+              <p className="text-xl text-gray-600">{t('blog.noResults') || 'No blog posts found matching your search.'}</p>
+            </div>
           )}
         </div>
       </div>

@@ -1,24 +1,27 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 import hpvc from "../../assets/robofest.jpg"
-const achievements = [
-  {
-    title: "Universal Electrode Holder’ for Universal Shielded Metal Arc Welding",
-    description: "A specially designed electrode holder compatible with a wide range of electrodes, enhancing the versatility and safety of the USMAW process. Its ergonomic and insulated design ensures ease of use and optimal current transfer, making it ideal for diverse welding environments.",
-    image: "https://www.competitionsciences.org/wp-content/uploads/2017/07/download.png",
-  },
-  {
-    title: "Welding torch ‘for Advanced Gas Metal Arc Welding (AGMAW).",
-    description: "An advanced torch tailored for high-efficiency AGMAW operations, offering precise wire feeding, controlled gas shielding, and minimal spatter. Designed for continuous, automated, or semi-automated welding in industrial applications, it ensures clean welds and increased productivity.",
-    image:hpvc,
-  },
-  {
-    title: "Welding torch for Advanced Submerged Arc Welding Process (ASAW).",
-    description:
-      "A robust and high-performance torch engineered for the ASAW process, enabling deep penetration welds with high deposition rates. Ideal for heavy-duty applications, it features efficient flux delivery and cooling systems for extended welding cycles and superior weld quality.",
-    image: "https://lnmiit.ac.in/wp-content/uploads/2024/07/unnamed.png",
-  },
- 
-];
+
+const Achievements = () => {
+  const { t } = useTranslation();
+  
+  const achievements = [
+    {
+      title: t('scope.universalElectrode'),
+      description: t('scope.universalElectrodeDesc'),
+      image: "https://www.competitionsciences.org/wp-content/uploads/2017/07/download.png",
+    },
+    {
+      title: t('scope.agmawTorch'),
+      description: t('scope.agmawTorchDesc'),
+      image: hpvc,
+    },
+    {
+      title: t('scope.asawTorch'),
+      description: t('scope.asawTorchDesc'),
+      image: "https://lnmiit.ac.in/wp-content/uploads/2024/07/unnamed.png",
+    },
+  ];
 
 const AchievementCard = ({ title, description, image }) => {
   return (
@@ -30,10 +33,9 @@ const AchievementCard = ({ title, description, image }) => {
   );
 };
 
-const Achievements = () => {
   return (
     <div className="bg-gray-100 py-10 text-center">
-      <h2 className="text-3xl font-bold text-red-900 mb-6">Innovative Welding Tools & Technologies</h2>
+      <h2 className="text-3xl font-bold text-red-900 mb-6">{t('scope.innovativeTools')}</h2>
       <div className="max-w-screen-lg mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-4 px-4">
         {achievements.map((achievement, index) => (
           <AchievementCard key={index} {...achievement} />

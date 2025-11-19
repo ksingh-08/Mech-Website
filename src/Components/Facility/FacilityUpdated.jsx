@@ -346,7 +346,14 @@ const FacilityPage = () => {
   const [activeFacility, setActiveFacility] = useState(FACILITIES[0]);
   const [fadeState, setFadeState] = useState("fade-in");
   const [autoRotateIndex, setAutoRotateIndex] = useState(0);
+  const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate();
+
+  // Filter facilities based on search query
+  const filteredFacilities = FACILITIES.filter((facility) =>
+    facility.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    facility.description.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
 
   // Auto rotate featured facility with fade effect
@@ -390,7 +397,43 @@ const FacilityPage = () => {
             <h2 className="text-3xl font-bold text-center mb-3 text-gray-800">
               {t('facility.ourFacilities')}
             </h2>
-            <div className="h-1 w-32 bg-red-600 mx-auto rounded-full"></div>
+            <div className="h-1 w-32 bg-red-600 mx-auto rounded-full mb-6"></div>
+            
+            {/* Search/Filter Bar */}
+            <div className="max-w-2xl mx-auto mb-8">
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder={t('facility.searchPlaceholder') || "Search facilities..."}
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full px-4 py-3 pl-12 border-2 border-gray-300 rounded-lg focus:border-red-800 focus:outline-none text-lg"
+                />
+                <svg
+                  className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                {searchQuery && (
+                  <button
+                    onClick={() => setSearchQuery("")}
+                    className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                )}
+              </div>
+              {searchQuery && (
+                <p className="text-sm text-gray-600 mt-2 text-center">
+                  {filteredFacilities.length} {t('facility.resultsFound') || 'result(s) found'}
+                </p>
+              )}
+            </div>
           </div>
           <div className="mb-20">
             <div className="relative max-w-7xl mx-auto">
@@ -423,7 +466,7 @@ const FacilityPage = () => {
                 modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
                 className="mySwiper"
               >
-                {FACILITIES.map((facility) => (
+                {filteredFacilities.map((facility) => (
                   <SwiperSlide
                     key={facility.id}
                     className="swiper-slide w-72 bg-white shadow-md rounded-xl overflow-hidden border border-gray-200"
@@ -539,7 +582,7 @@ const FacilityPage = () => {
     description:
       "Shielded Metal Arc Welding, a manual arc welding process using a consumable electrode.",
   } */}
-{FACILITIES.map((facility, index) => (
+{filteredFacilities.map((facility, index) => (
   <motion.div
     key={facility.id}
     initial={{ opacity: 0, y: 25 }}

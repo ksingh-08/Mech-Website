@@ -105,12 +105,6 @@ const NavbarUpdated = () => {
                 {t('navbar.about')}
               </NavLink>
               <NavLink
-                to="/facility"
-                className="block px-4 py-3 text-gray-800 hover:bg-red-50 transition-colors duration-150 text-sm font-medium border-t border-gray-100"
-              >
-                {t('navbar.facility')}
-              </NavLink>
-              <NavLink
                 to="/career"
                 className="block px-4 py-3 text-gray-800 hover:bg-red-50 transition-colors duration-150 text-sm font-medium border-t border-gray-100"
               >
@@ -121,6 +115,7 @@ const NavbarUpdated = () => {
         </AnimatePresence>
       </li>
 
+      <li className='hover:scale-105'><NavLink className=" text-lg font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/facility">{t('navbar.facility')}</NavLink></li>
       <li className='hover:scale-105'><NavLink className=" text-lg font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/research">{t('navbar.research')}</NavLink></li>
       <li className='hover:scale-105'><NavLink className=" text-lg font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/welding-defects">{t('navbar.defects')}</NavLink></li>
       <li className='hover:scale-105'><NavLink className=" text-lg font-medium relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-orange-100 after:transition-all after:duration-300 hover:after:w-full" to="/blog">{t('navbar.blog')}</NavLink></li>
