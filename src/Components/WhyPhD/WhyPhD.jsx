@@ -26,8 +26,7 @@ const WhyPhD = () => {
 
   const mentors = [
     "Dr. Sunil Pandey",
-    "Dr. Manoj Kumar",
-    "Dr. Deepak Unune"
+    "Dr. Manoj Kumar"
   ];
 
   return (

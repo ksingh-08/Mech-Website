@@ -104,7 +104,7 @@ Design Innovations:
 - Design of 'Spin Welding Machine' for welding of polymers
 
 EXTENDED PAGES:
-- Industry Consultancy (/industry-consultancy): Industrial consultancy services, faculty consultants (Sunil Pandey, Manoj Kumar, Deepak Unune)
+- Industry Consultancy (/industry-consultancy): Industrial consultancy services, faculty consultants (Sunil Pandey, Manoj Kumar)
 - Training (/training): In-house training programs for individuals and organizations
 - Workshop (/workshop): Workshop facility for hands-on training, welding research, and project development
 

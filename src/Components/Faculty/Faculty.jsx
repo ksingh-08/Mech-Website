@@ -123,19 +123,6 @@ Mechanical-Mechatronics Engineering
       
 
       <div className="faculty-member">
-        <img src={fac6} alt="Faculty 1"/>
-        <h3>Dr.Deepak Rajendra Unune</h3>
-        <p>Assistant Professor
-
-Mechanical-Mechatronics Engineering
-
-<br />
-(Speciality in Material Science and Engineering)</p>
-      </div>
-      
-      
-      
-      <div className="faculty-member">
         <img src={fac7} alt="Faculty 1"/>
         <h3>Dr.Servesh Kumar Agnihotri </h3>
         <p>Assistant Professor
